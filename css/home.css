@@ -32,6 +32,7 @@
     font:600 12px 'Open Sans',sans-serif;
     text-transform: uppercase;
     border-right:1px solid #eeeeee;
+
 }
 
 .b-topBar__addr{
@@ -39,17 +40,20 @@
     border-right:1px solid #eeeeee;
     border-left:1px solid #eeeeee;
     margin-right: 10px;
+
 }
 
 .b-topBar__addr span.fa,.b-topBar__tel span.fa{
     font-size:17px;
     margin-right: 10px;
     vertical-align: middle;
+
 }
 
 .b-topBar__nav{
     overflow: hidden;
     border-right:1px solid #eeeeee ;
+    background-color: #b60303;
 }
 
 .b-topBar__nav li{
@@ -58,6 +62,7 @@
     padding: 20px 0;
     font:300 12px 'Open Sans',sans-serif;
     text-transform: uppercase;
+    
 }
 
 .b-topBar__nav li:last-child{
@@ -69,6 +74,7 @@
     width:100%;
     padding: 0 23px;
     border-right: 1px solid #eeeeee;
+
 }
 
 .b-topBar__nav li:first-child a{
