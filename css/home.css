@@ -24,21 +24,21 @@
 
 /* Top Bar */
 .b-topBar {
-    border-bottom:1px solid #eeeeee;
+    border-bottom:1px solid #444444;
 }
 
 .b-topBar__addr,.b-topBar__tel{
     padding: 20px 0 20px 0;
     font:600 12px 'Open Sans',sans-serif;
     text-transform: uppercase;
-    border-right:1px solid #eeeeee;
+    border-right:1px solid #444444;
 
 }
 
 .b-topBar__addr{
     padding-left: 35px;
-    border-right:1px solid #eeeeee;
-    border-left:1px solid #eeeeee;
+    border-right:1px solid #444444;
+    border-left:1px solid #444444;
     margin-right: 10px;
 
 }
@@ -52,28 +52,30 @@
 
 .b-topBar__nav{
     overflow: hidden;
-    border-right:1px solid #eeeeee ;
-    background-color: #b60303;
+    border-right:1px solid #444444 ;
+    background-color: #333333;
 }
 
 .b-topBar__nav li{
     float:right;
     list-style: none;
-    padding: 20px 0;
+    padding: 15px 0;
     font:300 12px 'Open Sans',sans-serif;
     text-transform: uppercase;
+
     
 }
 
 .b-topBar__nav li:last-child{
-    border-left:1px solid #eeeeee;
+    border-left:1px solid #444444;
 }
 
 .b-topBar__nav li a{
     display: block;
     width:100%;
-    padding: 0 23px;
-    border-right: 1px solid #eeeeee;
+    padding: 0 40px;
+    border-right: 1px solid #444444;
+
 
 }
 
@@ -90,7 +92,7 @@
 }
 
 .b-topBar__lang{
-    border-right: 1px solid #eeeeee;
+    border-right: 1px solid #444444;
 }
 
 .b-topBar__lang > div{
@@ -105,11 +107,14 @@
 a.m-langLink{
     font-weight:600;
     margin-left: 10px;
+        color: #ffffff
+
 }
 
 .h-lang li a{
     margin-left: 0!important;
     text-align: center;
+
 }
 
 .b-topBar__lang a span.fa{
@@ -188,7 +193,7 @@ a.m-langLink{
 }
 
 .b-nav__list ul{
-    margin-top: 20px;
+    margin-top: 37px;
     padding-left: 0;
     margin-bottom: 0;
 }
@@ -372,7 +377,8 @@ a.m-langLink{
 
 /* Search */
 .b-search{
-    height:300px;
+    height:250px;
+    padding-top: 70px;
 }
 
 .b-search__main{
@@ -386,7 +392,7 @@ a.m-langLink{
 }
 
 .b-search__main-title{
-    padding: 15px 20px;
+    padding: 15px 55px;
     display: inline-block;
     margin-bottom: 45px;
 }
@@ -394,7 +400,7 @@ a.m-langLink{
 .b-search__main-title h2{
     font:700 18px 'Open Sans',sans-serif;
     margin:0;
-    padding: 0 10px;
+    padding: 0 50px;
     border-left: 4px solid #fff;
     border-right: 4px solid #fff;
     line-height:1.1;
@@ -592,7 +598,7 @@ a.m-langLink{
 
 /* Featured */
 .b-featured{
-    padding: 135px 0 75px 0;
+    padding: 35px 0 55px 0;
     text-align: center;
     position: relative;
     box-shadow: 0px 30px 100px -38px rgba(0,0,0,0.3);
@@ -1787,4 +1793,15 @@ a.m-langLink{
 
 .b-footer__content-nav ul li a{
     font: 400 12px 'Open Sans',sans-serif;
+}
+
+.bg-yellow {
+    background-color: #f7ce2b;
+}
+
+.bg-black {
+    background-color: #333333;
+    padding-top: 115px;
+    padding-bottom: 45px;
+
 }
