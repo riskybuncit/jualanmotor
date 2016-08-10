@@ -1,3 +1,4 @@
+
 /*------------------------------------------------------------------
 [Table of contents]
 
@@ -74,7 +75,7 @@
 }
 
 .b-detail__head-price-num{
-    padding: 8px 30px;
+    padding: 8px 8px;
     font: 700 26px 'PT Sans',sans-serif;
 }
 
@@ -116,7 +117,7 @@
     position: absolute;
     left:0;
     top:0;
-    padding: 32px 15px 0 15px;
+    padding: 25px 15px 0 15px;
 }
 
 .b-detail__main-aside-about-call > div{
@@ -423,3 +424,73 @@
     margin: 0 30px;
     display: inline-block;
 }
+
+.premium{
+    font: 700 10px 'Open Sans',sans-serif;
+    padding: 6px 16px 6px 16px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.title-buncit{
+    font: 700 12px 'Open Sans',sans-serif;
+    color: #727272;
+    text-transform: none;
+    padding-left: 12px;
+    border-left:3px solid #dddddd;
+    margin-bottom: 25px;
+}
+
+.title-kanan{
+    font: 700 12px 'Open Sans',sans-serif;
+    color: #727272;
+    text-transform: none;
+    padding-left: 12px;
+    border-left:3px solid #dddddd;
+    margin-left: 75px;
+}
+.right-deskription {
+    margin-left: 120px;
+}
+
+.user-detail span.fa{
+    display: block;
+    height:100%;
+    font-size:34px;
+    position: absolute;
+    left:0;
+    top:0;
+    padding: 0 0 0 0px;
+    color: #000000;
+
+
+}
+.user-detail{
+    padding: 20px 0 25px 80px;
+    position: relative;
+    background-color: #9a9a9a;
+    color: #ffffff;
+}
+
+.user-detail span.fa{
+    display: block;
+    height:100%;
+    font-size:34px;
+    position: absolute;
+    left:0;
+    top:0;
+    padding: 14px 15px 5px 15px;
+    background-color: #e8c331;
+}
+
+.user-detail > div{
+    font: 700 26px 'Open Sans',sans-serif;
+}
+
+.user-detail p{
+    font: 400 14px 'Open Sans',sans-serif;
+    margin: 0;    
+}use
