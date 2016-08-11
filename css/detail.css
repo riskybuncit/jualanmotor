@@ -493,4 +493,36 @@
 .user-detail p{
     font: 400 14px 'Open Sans',sans-serif;
     margin: 0;    
-}use
+}
+
+
+.user-phone{
+    padding: 20px 0 25px 80px;
+    position: relative;
+    background-color: #555555;
+    color: #ffffff;
+}
+.user-phone span.fa{
+    display: block;
+    height:100%;
+    font-size:34px;
+    position: absolute;
+    left:0;
+    top:0;
+    padding: 25px 15px 5px 15px;
+    background-color: #9dd120;
+}
+
+.user-phone > div{
+    font: 700 26px 'Open Sans',sans-serif;
+}
+
+.user-phone p{
+    font: 400 14px 'Open Sans',sans-serif;
+    margin: 0;    
+}
+
+.ads-detail{
+    background-color: #f5f5f5;
+    padding: 20px 20px 20px 20px;
+}
