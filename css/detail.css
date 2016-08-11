@@ -1,3 +1,4 @@
+
 /*------------------------------------------------------------------
 [Table of contents]
 
@@ -74,7 +75,7 @@
 }
 
 .b-detail__head-price-num{
-    padding: 8px 30px;
+    padding: 8px 8px;
     font: 700 26px 'PT Sans',sans-serif;
 }
 
@@ -422,4 +423,32 @@
 .b-brands__brand{
     margin: 0 30px;
     display: inline-block;
+}
+
+.premium{
+    font: 700 10px 'Open Sans',sans-serif;
+    padding: 6px 16px 6px 16px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.title-buncit{
+    font: 700 12px 'Open Sans',sans-serif;
+    color: #727272;
+    text-transform: none;
+    padding-left: 12px;
+    border-left:3px solid #dddddd;
+    margin-bottom: 25px;
+}
+
+.title-kanan{
+    font: 700 12px 'Open Sans',sans-serif;
+    color: #727272;
+    text-transform: none;
+    padding-left: 12px;
+    border-left:3px solid #dddddd;
+    margin-left: 75px;
 }
