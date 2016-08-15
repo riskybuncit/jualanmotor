@@ -93,23 +93,25 @@
 			</div>
 		</div><!--b-breadCumbs-->
 
-		<section class="b-detail s-shadow">
+		<div class="b-infoBar">
 			<div class="container">
-				<header class="b-detail__head">
-					<div class="row">
-						<div class="col-sm-2 col-xs-10">
-							<div class="b-detail__head-price">
-								<div class="b-detail__head-price-num">IKLAN TERBARU</div>
-							</div>
-						</div>
-						<div class="col-sm-10 col-xs-12">
-							<div class="b-detail__head-price">
-								<div class="b-detail__head-price-num">$44,380</div>
-								<p>Included Taxes &amp; Checkup</p>
-							</div>
+				<div class="row">
+					<div class="col-sm-5 col-xs-12" data-wow-delay="0.3s">
+						<span class="premium m-premium">IKLAN TERBARU</span>
+					</div>
+					<div class="col-sm-7 col-xs-12">
+						<div class="b-infoBar__btns wow zoomInUp" data-wow-delay="0.3s">
+							<a href="#" class="btn m-btn m-infoBtn">Print Halaman<span class="fa fa-angle-right"></span></a>
+							<a href="#" class="btn m-btn m-infoBtn">Masukan Wishlist<span class="fa fa-angle-right"></span></a>
+							<a href="#" class="btn m-btn m-infoBtn">Share Iklan ini<span class="fa fa-angle-right"></span></a>
 						</div>
 					</div>
-				</header>
+				</div>
+			</div>
+		</div><!--b-infoBar-->
+
+		<section class="b-detail s-shadow">
+			<div class="container">
 				<header class="b-detail__head s-lineDownLeft wow zoomInUp" data-wow-delay="0.5s">
 					<div class="row">
 						<div class="col-sm-9 col-xs-12">
@@ -120,8 +122,7 @@
 						</div>
 						<div class="col-sm-3 col-xs-12">
 							<div class="b-detail__head-price">
-								<div class="b-detail__head-price-num">$44,380</div>
-								<p>Included Taxes &amp; Checkup</p>
+								<div class="b-detail__head-price-num">RP12.345.678</div>
 							</div>
 						</div>
 					</div>
@@ -268,10 +269,8 @@
 								</div-->
 								<div class="b-detail__main-info-text wow zoomInUp" data-wow-delay="0.5s">
 									<div class="b-detail__main-aside-about-form-links">
-										<a href="#" class="j-tab m-active s-lineDownCenter" data-to='#info1'>GENERAL INQUIRY</a>
-										<a href="#" class="j-tab" data-to='#info2'>SCHEDULE TEST DRIVE</a>
-										<a href="#" class="j-tab" data-to='#info3'>GENERAL INQUIRY</a>
-										<a href="#" class="j-tab" data-to='#info4'>SCHEDULE TEST DRIVE</a>
+										<a href="#" class="j-tab m-active s-lineDownCenter" data-to='#info1'>Penjelasan Tambahan</a>
+										<a href="#" class="j-tab" data-to='#info2'>Ulasan</a>
 									</div>
 									<div id="info1">
 										<p>The 2016 Nissan Maxima is powered by a 3.5-liter V6 engine with 300 horsepower, 10 more than the engine in the outgoing
@@ -303,21 +302,6 @@
 											convallis tortor enim viverra quam, hendrerit interdum dui quam ut lacus. Donec quis quam in ante condimentum blan erdit.
 											Integer et urna. Vestibulum nisl. Ut ante est, imperdiet dignissim eleifend sit amet lacinia tempor justo. Nunc ornare atm nibh.
 											Fusce ut felis. </p>
-										<p>Donec ullamcorper nisi ac lectus. Proin at orci. Suspendisse nec orci nec elit convallis porttitor. Praesent sit amet turpis eu nisl
-											faucibus pharetra. Sed eu felis. Etiam eleifend nisl nec lectus. Ut suscipit pede eu diam. Aenean vitae quam. Cras felis. Sed utdw
-											nibh. Duis libero. Vivamus pharetra libero non facilisis imperdiet mi augue feugiat nisl.</p>
-									</div>
-									<div id="info3">
-										<p>Vestibulum auctor lacinia nunc. Nunc ut turpis.Sed libero magna, fermentum viverra, egestas non, fermentum sed, elit. Aenean
-											erat orci, mollis quis gravida sed, mollis a, quam. Integer fermentum neque egestas orci. Nunc posuere, felis sit amet faucibus
-											convallis tortor enim viverra quam, hendrerit interdum dui quam ut lacus. Donec quis quam in ante condimentum blan erdit.
-											Integer et urna. Vestibulum nisl. Ut ante est, imperdiet dignissim eleifend sit amet lacinia tempor justo. Nunc ornare atm nibh.
-											Fusce ut felis. </p>
-										<p>Donec ullamcorper nisi ac lectus. Proin at orci. Suspendisse nec orci nec elit convallis porttitor. Praesent sit amet turpis eu nisl
-											faucibus pharetra. Sed eu felis. Etiam eleifend nisl nec lectus. Ut suscipit pede eu diam. Aenean vitae quam. Cras felis. Sed utdw
-											nibh. Duis libero. Vivamus pharetra libero non facilisis imperdiet mi augue feugiat nisl.</p>
-									</div>
-									<div id="info4">
 										<p>Donec ullamcorper nisi ac lectus. Proin at orci. Suspendisse nec orci nec elit convallis porttitor. Praesent sit amet turpis eu nisl
 											faucibus pharetra. Sed eu felis. Etiam eleifend nisl nec lectus. Ut suscipit pede eu diam. Aenean vitae quam. Cras felis. Sed utdw
 											nibh. Duis libero. Vivamus pharetra libero non facilisis imperdiet mi augue feugiat nisl.</p>
@@ -476,35 +460,36 @@
 									</div>
 								</div-->
 								<div class="b-detail__main-aside-about wow zoomInUp" data-wow-delay="0.5s">
-									<h2 class="s-titleDet">INQUIRE ABOUT THIS VEHICLE</h2>
+
+
+									<h2 class="s-titleDet">Deskripsi Motor</h2>
+									<p class="title-buncit">Merk Motor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-buncit title-kanan">Honda</span></p>
+									<p class="title-buncit">Jenis Motor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-buncit title-kanan">Supra Ex</span></p>
+									<p class="title-buncit">Tipe Motor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-buncit title-kanan">Bebek</span></p>
+									<p class="title-buncit">Kilometer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-buncit title-kanan">10.000.000</span></p>
+									<p class="title-buncit">Transmisi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-buncit title-kanan">Bebek</span></p>
+									<p class="title-buncit">Warna&nbsp;&nbsp;&nbsp;<span class="title-buncit title-kanan right-deskription">Warna Warni</span></p>
+									<p class="title-buncit">Tahun Produksi<span class="title-buncit title-kanan">1769</span></p>
+									<p class="title-buncit">Kepemilikan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-buncit title-kanan">Bekas</span></p>
+
+									<h2 class="s-titleDet">Hubungi Penjual</h2>
 									<div class="b-detail__main-aside-about-call">
 										<span class="fa fa-phone"></span>
 										<div>1-888-378-4027</div>
-										<p>Call the seller 24/7 and they would help you.</p>
+										<p></p>
 									</div>
-									<div class="b-detail__main-aside-about-seller">
-										<p>Seller Info: <span>NissanCarDealer</span></p>
+									<div class="user-detail">
+										<span class="fa fa-user"></span>
+										<p><strong>Master Kepo's</strong></p>
 									</div>
 									<div class="b-detail__main-aside-about-form">
 										<div class="b-detail__main-aside-about-form-links">
-											<a href="#" class="j-tab m-active s-lineDownCenter" data-to='#form1'>GENERAL INQUIRY</a>
-											<a href="#" class="j-tab" data-to='#form2'>SCHEDULE TEST DRIVE</a>
+											<a href="#" class="j-tab m-active s-lineDownCenter" data-to='#form1'>Kirim Pesan Ke Seller</a>
 										</div>
 										<form id="form1" action="/" method="post">
-											<input type="text" placeholder="YOUR NAME" value="" name="name" />
-											<input type="email" placeholder="EMAIL ADDRESS" value="" name="email" />
-											<input type="tel" placeholder="PHONE NO." value="" name="name" />
-											<textarea name="text" placeholder="message"></textarea>
-											<div><input type="checkbox" name="one" value="" /><label>Send me a copy of this message</label></div>
-											<div><input type="checkbox" name="two" value="" /><label>Send me a copy of this message</label></div>
-											<button type="submit" class="btn m-btn">SEND MESSAGE<span class="fa fa-angle-right"></span></button>
-										</form>
-										<form id="form2" action="/" method="post">
-											<input type="text" placeholder="YOUR NAME" value="" name="name" />
-											<textarea name="text" placeholder="message"></textarea>
-											<div><input type="checkbox" name="one" value="" /><label>Send me a copy of this message</label></div>
-											<div><input type="checkbox" name="two" value="" /><label>Send me a copy of this message</label></div>
-											<button type="submit" class="btn m-btn">SEND MESSAGE<span class="fa fa-angle-right"></span></button>
+											<input type="tel" placeholder="Honda Supra Ex" />
+											<textarea name="text" placeholder="Tulis  Pesan Disini" style="padding-bottom: 100px;"></textarea>
+											<button type="submit" class="btn m-btn" style="text-align:right;">Kirim<span class="fa fa-angle-right"></span></button>
 										</form>
 									</div>
 								</div>
@@ -521,7 +506,7 @@
 												<span class="fa fa-caret-down"></span>
 											</div>
 											<input type="text" placeholder="INTEREST RATE IN %" value="" name="name" />
-											<button type="submit" class="btn m-btn">ESTIMATE PAYMENT<span class="fa fa-angle-right"></span></button>
+											<button type="submit" class="btn m-btn ">ESTIMATE PAYMENT<span class="fa fa-angle-right"></span></button>
 										</form>
 									</div>
 									<div class="b-detail__main-aside-about-call">
