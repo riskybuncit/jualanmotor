@@ -26,33 +26,14 @@
 	</head>
 	<body class="m-listTableTwo" data-scrolling-animations="true" data-equal-height=".b-items__cell">
 
-		<section class="b-modal">
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog ">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title" id="myModalLabel">Video</h4>
-						</div>
-						<div class="modal-body">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/a_ugz7GoHwY" allowfullscreen></iframe>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!--b-modal-->
-		<header class="b-topBar" data-wow-delay="0.7s">
+		<header class="b-topBar b-topBar__nav" data-wow-delay="0.7s">
 			<div class="container">
-				<div class="row">
+				<div class="row ">
 					<div class="col-md-12 col-xs-18">
 						<nav class="b-topBar__nav">
 							<ul>
-								<li><a href="register.html">Register</a></li>
-								<li><a href="#">Sign in</a></li>
-								<li><a href="#">Pasang Iklan</a></li>
+								<li><a style="color:#ffffff;" href="register.html">Register</a></li>
+								<li><a style="color:#ffffff;" href="#">Sign in</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -60,13 +41,11 @@
 			</div>
 		</header><!--b-topBar-->
 
-		<nav class="b-nav">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-3 col-xs-4">
-						<div class="b-nav__logo" data-wow-delay="0.3s">
-						<img src="images/logo/logo.png" alt="logo" />	
-						</div>
+		<div class="bg-yellow b-nav">
+			<div class="container bg-yellow">
+				<div class="row bg-yellow">
+					<div class="col-sm-3 col-xs-4 ">
+						<img src="images/logo/logo.png" alt="logo" />
 					</div>
 					<div class="col-sm-9 col-xs-8">
 						<div class="b-nav__list" data-wow-delay="0.3s">
@@ -93,13 +72,24 @@
 					</div>
 				</div>
 			</div>
-		</nav><!--b-nav-->
+		</div>
 
-		
+		<section class="b-pageHeader">
+			<div class="container">
+				<div class="row">
+					<div style="float:right; padding:2px 2px 2px 2px;">
+				<p style="text-align:center;"><img class="img-responsive"  src="images/backgrounds/iklandetail2.jpg" alt="ads" /></p>
+					</div>
+					<div style="float:right; padding:2px 2px 2px 2px;">
+				<p style="text-align:center;"><img class="img-responsive"  src="images/backgrounds/iklandetail.jpg" alt="camaro" /></p>
+			    	</div>	 
+				</div>
+			</div>
+		</section><!--b-pageHeader-->
 
 		<div class="b-breadCumbs s-shadow">
 			<div class="container wow zoomInUp" data-wow-delay="0.5s">
-				<a href="home.html" class="b-breadCumbs__page">Home</a><span class="fa fa-angle-right"></span><a href="motor-bekas.html" class="b-breadCumbs__page m-active">Motor Bekas</a>
+				<a href="home.html" class="b-breadCumbs__page">Home</a><span class="fa fa-angle-right"></span><a href="listTableTwo.html" class="b-breadCumbs__page m-active">Search Results</a>
 			</div>
 		</div><!--b-breadCumbs-->
 
@@ -107,23 +97,29 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-4 col-xs-12">
-						
+						<div class="b-infoBar__compare wow zoomInUp" data-wow-delay="0.5s">
+							<a href="#" class="b-infoBar__compare-item"><span class="fa fa-pencil-square-o"></span>BANDINGKAN</a>
+						</div>
 					</div>
 					<div class="col-lg-8 col-xs-12">
 						<div class="b-infoBar__select wow zoomInUp" data-wow-delay="0.5s">
 							<form method="post" action="/">
-								
 								<div class="b-infoBar__select-one">
-									<span class="b-infoBar__select-one-title">SHOW ON PAGE</span>
+									<span class="b-infoBar__select-one-title">PILIH TAMPILAN</span>
+									<a href="listings.html" class="m-list"><span class="fa fa-list"></span></a>
+									<a href="listTableTwo.html" class="m-table m-active"><span class="fa fa-table"></span></a>
+								</div>
+								<div class="b-infoBar__select-one">
+									<span class="b-infoBar__select-one-title">TAMPILKAN</span>
 									<select name="select1" class="m-select">
 										<option value="" selected="">10 items</option>
 									</select>
 									<span class="fa fa-caret-down"></span>
 								</div>
 								<div class="b-infoBar__select-one">
-									<span class="b-infoBar__select-one-title">SORT BY</span>
+									<span class="b-infoBar__select-one-title">URUTKAN</span>
 									<select name="select2" class="m-select">
-										<option value="" selected="">Last Added</option>
+										<option value="" selected="">TERBARU</option>
 									</select>
 									<span class="fa fa-caret-down"></span>
 								</div>
@@ -139,7 +135,7 @@
 				<div class="row">
 					<div class="col-lg-3 col-sm-4 col-xs-12">
 						<aside class="b-items__aside">
-							<h2 class="s-title wow zoomInUp" data-wow-delay="0.5s">REFINE YOUR SEARCH</h2>
+							<h2 class="s-title-k wow zoomInUp" data-wow-delay="0.5s">PENCARIAN DETAIL</h2>
 							<div class="b-items__aside-main wow zoomInUp" data-wow-delay="0.5s">
 								<form>
 									<div class="b-items__aside-main-body">
@@ -196,22 +192,22 @@
 										</div>
 									</div>
 									<footer class="b-items__aside-main-footer">
-										<button type="submit" class="btn m-btn">FILTER VEHICLES<span class="fa fa-angle-right"></span></button><br />
+										<button type="submit" class="btn m-btn">CARI MOTOR<span class="fa fa-angle-right"></span></button><br />
 										<a href="">RESET ALL FILTERS</a>
 									</footer>
 								</form>
 							</div>
 							<div class="b-items__aside-sell wow zoomInUp" data-wow-delay="0.5s">
 								<div class="b-items__aside-sell-img">
-									<h3>SELL YOUR CAR</h3>
+									<h3>JUAL MOTOR LO</h3>
 								</div>
-								<div class="b-items__aside-sell-info">
+								<div class="b-items__aside-sell-info" style="text-align:center;">
 									<p>
-										Nam tellus enimds eleifend dignis lsim
-										biben edum tristique sed metus fusce
-										Maecenas lobortis.
+									 	Punya <b>udah nggak kepake?</b><br>
+									 	suka <b>bantuin temen jualin motor?</b><br>
+									 	atau lu <b>suka gonta-ganti motor</b>
 									</p>
-									<a href="submit1.html" class="btn m-btn">REGISTER NOW<span class="fa fa-angle-right"></span></a>
+									<a href="submit1.html" class="btn m-btn">DAFTAR SEKARANG<span class="fa fa-angle-right"></span></a>
 								</div>
 							</div>
 						</aside>
@@ -221,9 +217,12 @@
 							<div class="col-lg-4 col-md-6 col-xs-12 wow zoomInUp" data-wow-delay="0.5s">
 								<div class="b-items__cell">
 									<div class="b-items__cars-one-img">
-										<img class='img-responsive' src="media/260x230/chevroletTable.jpg" alt='chevrolet'/>
-										<a href="#" data-toggle="modal" data-target="#myModal" class="b-items__cars-one-img-video"><span class="fa fa-film"></span>Preview</a>
+										<img class='img-responsive' src="media/demo-page/mac.png" alt='toyota'/>
 										<span class="b-items__cars-one-img-type m-premium">PREMIUM</span>
+										<form action="/" method="post">
+											<input type="checkbox" name="check1" id='check1'/>
+											<label for="check1" class="b-items__cars-one-img-check"><span class="fa fa-check"></span></label>
+										</form>
 									</div>
 									<div class="b-items__cell-info">
 										<div class="s-lineDownLeft b-items__cell-info-title">
@@ -233,29 +232,32 @@
 										<div>
 											<div class="row m-smallPadding">
 												<div class="col-xs-5">
-													<span class="b-items__cars-one-info-title">Body Style:</span>
-													<span class="b-items__cars-one-info-title">Mileage:</span>
-													<span class="b-items__cars-one-info-title">Transmission:</span>
-													<span class="b-items__cars-one-info-title">Specs:</span>
+													<span class="b-items__cars-one-info-title">Tipe Motor:</span>
+													<span class="b-items__cars-one-info-title">Kilometer:</span>
+													<span class="b-items__cars-one-info-title">Transmisi:</span>
+													<span class="b-items__cars-one-info-title">Spesifikasi:</span>
 												</div>
 												<div class="col-xs-7">
 													<span class="b-items__cars-one-info-value">Sedan</span>
 													<span class="b-items__cars-one-info-value">35,000 KM</span>
 													<span class="b-items__cars-one-info-value">6-Speed Auto</span>
 													<span class="b-items__cars-one-info-value">2-Passenger, 2-Door</span>
-												</div>
+												</div> 
 											</div>
 										</div>
-										<h5 class="b-items__cell-info-price"><span>Harga:</span>Rp 29,415</h5>
+										<div class="b-compare__images-item-price m-left">Rp 120,440</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4 col-md-6 col-xs-12 wow zoomInUp" data-wow-delay="0.5s">
 								<div class="b-items__cell">
 									<div class="b-items__cars-one-img">
-										<img class='img-responsive' src="media/260x230/ferrariTable.jpg" alt='ferrari'/>
-										<a data-toggle="modal" data-target="#myModal" href="#" class="b-items__cars-one-img-video"><span class="fa fa-film"></span>Preview</a>
-										<span class="b-items__cars-one-img-type m-listing">NEW LISTING</span>
+										<img class='img-responsive' src="media/demo-page/mac.png" alt='toyota'/>
+										<span class="b-items__cars-one-img-type m-listing">NE LISTING</span>
+										<form action="/" method="post">
+											<input type="checkbox" name="check2" id='check2'/>
+											<label for="check2" class="b-items__cars-one-img-check"><span class="fa fa-check"></span></label>
+										</form>
 									</div>
 									<div class="b-items__cell-info">
 										<div class="s-lineDownLeft b-items__cell-info-title">
@@ -265,10 +267,10 @@
 										<div>
 											<div class="row m-smallPadding">
 												<div class="col-xs-5">
-													<span class="b-items__cars-one-info-title">Body Style:</span>
-													<span class="b-items__cars-one-info-title">Mileage:</span>
-													<span class="b-items__cars-one-info-title">Transmission:</span>
-													<span class="b-items__cars-one-info-title">Specs:</span>
+													<span class="b-items__cars-one-info-title">Tipe Motor:</span>
+													<span class="b-items__cars-one-info-title">Kilometer:</span>
+													<span class="b-items__cars-one-info-title">Transmisi:</span>
+													<span class="b-items__cars-one-info-title">Spesifikasi:</span>
 												</div>
 												<div class="col-xs-7">
 													<span class="b-items__cars-one-info-value">Sedan</span>
@@ -278,16 +280,19 @@
 												</div>
 											</div>
 										</div>
-										<h5 class="b-items__cell-info-price"><span>Harga:</span>Rp 29,415</h5>
+										<div class="b-compare__images-item-price m-left">Rp 120,440</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4 col-md-6 col-xs-12 wow zoomInUp" data-wow-delay="0.5s">
 								<div class="b-items__cell">
 									<div class="b-items__cars-one-img">
-										<img class='img-responsive' src="media/260x230/maximaTable.jpg" alt='maxima'/>
-										<a data-toggle="modal" data-target="#myModal" href="#" class="b-items__cars-one-img-video"><span class="fa fa-film"></span>Preview</a>
+										<img class='img-responsive' src="media/demo-page/mac.png" alt='toyota'/>
 										<span class="b-items__cars-one-img-type m-premium">PREMIUM</span>
+										<form action="/" method="post">
+											<input type="checkbox" name="check3" id='check3'/>
+											<label for="check3" class="b-items__cars-one-img-check"><span class="fa fa-check"></span></label>
+										</form>
 									</div>
 									<div class="b-items__cell-info">
 										<div class="s-lineDownLeft b-items__cell-info-title">
@@ -310,15 +315,18 @@
 												</div>
 											</div>
 										</div>
-										<h5 class="b-items__cell-info-price"><span>Harga:</span>Rp 29,415</h5>
+										<div class="b-compare__images-item-price m-left">Rp 120,440</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4 col-md-6 col-xs-12 wow zoomInUp" data-wow-delay="0.5s">
 								<div class="b-items__cell">
 									<div class="b-items__cars-one-img">
-										<img class='img-responsive' src="media/260x230/mersTable.jpg" alt='mers'/>
-										<a data-toggle="modal" data-target="#myModal" href="#" class="b-items__cars-one-img-video"><span class="fa fa-film"></span>Preview</a>
+										<img class='img-responsive' src="media/demo-page/mac.png" alt='toyota'/>
+										<form action="/" method="post">
+											<input type="checkbox" name="check4" id='check4'/>
+											<label for="check4" class="b-items__cars-one-img-check"><span class="fa fa-check"></span></label>
+										</form>
 									</div>
 									<div class="b-items__cell-info">
 										<div class="s-lineDownLeft b-items__cell-info-title">
@@ -341,16 +349,19 @@
 												</div>
 											</div>
 										</div>
-										<h5 class="b-items__cell-info-price"><span>Harga:</span>Rp 29,415</h5>
+										<div class="b-compare__images-item-price m-left">Rp 120,440</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4 col-md-6 col-xs-12 wow zoomInUp" data-wow-delay="0.5s">
 								<div class="b-items__cell">
 									<div class="b-items__cars-one-img">
-										<img class='img-responsive' src="media/260x230/audiTable.jpg" alt='audi'/>
-										<a data-toggle="modal" data-target="#myModal" href="#" class="b-items__cars-one-img-video"><span class="fa fa-film"></span>Preview</a>
+										<img class='img-responsive' src="media/demo-page/mac.png" alt='toyota'/>
 										<span class="b-items__cars-one-img-type m-listing">NEW LISTING</span>
+										<form action="/" method="post">
+											<input type="checkbox" name="check5" id='check5'/>
+											<label for="check5" class="b-items__cars-one-img-check"><span class="fa fa-check"></span></label>
+										</form>
 									</div>
 									<div class="b-items__cell-info">
 										<div class="s-lineDownLeft b-items__cell-info-title">
@@ -373,16 +384,19 @@
 												</div>
 											</div>
 										</div>
-										<h5 class="b-items__cell-info-price"><span>Harga:</span>Rp 29,415</h5>
+										<div class="b-compare__images-item-price m-left">Rp 120,440</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4 col-md-6 col-xs-12 wow zoomInUp" data-wow-delay="0.5s">
 								<div class="b-items__cell">
 									<div class="b-items__cars-one-img">
-										<img class='img-responsive' src="media/260x230/toyotaTable.jpg" alt='toyota'/>
-										<a href="#" class="b-items__cars-one-img-video"><span class="fa fa-film"></span>Preview</a>
+										<img class='img-responsive' src="media/demo-page/mac.png" alt='toyota'/>
 										<span class="b-items__cars-one-img-type m-premium">PREMIUM</span>
+										<form action="/" method="post">
+											<input type="checkbox" name="check6" id='check6'/>
+											<label for="check6" class="b-items__cars-one-img-check"><span class="fa fa-check"></span></label>
+										</form>
 									</div>
 									<div class="b-items__cell-info">
 										<div class="s-lineDownLeft b-items__cell-info-title">
@@ -405,16 +419,19 @@
 												</div>
 											</div>
 										</div>
-										<h5 class="b-items__cell-info-price"><span>Harga:</span>Rp 29,415</h5>
+										<div class="b-compare__images-item-price m-left">Rp 120,440</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4 col-md-6 col-xs-12 wow zoomInUp" data-wow-delay="0.5s">
 								<div class="b-items__cell">
 									<div class="b-items__cars-one-img">
-										<img class='img-responsive' src="media/260x230/jaguarTable.jpg" alt='jaguar'/>
-										<a data-toggle="modal" data-target="#myModal" href="#" class="b-items__cars-one-img-video"><span class="fa fa-film"></span>Preview</a>
+										<img class='img-responsive' src="media/demo-page/mac.png" alt='toyota'/>
 										<span class="b-items__cars-one-img-type m-owner">1 OWNER</span>
+										<form action="/" method="post">
+											<input type="checkbox" name="check7" id='check7'/>
+											<label for="check7" class="b-items__cars-one-img-check"><span class="fa fa-check"></span></label>
+										</form>
 									</div>
 									<div class="b-items__cell-info">
 										<div class="s-lineDownLeft b-items__cell-info-title">
@@ -437,15 +454,18 @@
 												</div>
 											</div>
 										</div>
-										<h5 class="b-items__cell-info-price"><span>Harga:</span>Rp 29,415</h5>
+										<div class="b-compare__images-item-price m-left">Rp 120,440</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4 col-md-6 col-xs-12 wow zoomInUp" data-wow-delay="0.5s">
 								<div class="b-items__cell">
 									<div class="b-items__cars-one-img">
-										<img class='img-responsive' src="media/260x230/mercTable.jpg" alt='merc'/>
-										<a data-toggle="modal" data-target="#myModal" href="#" class="b-items__cars-one-img-video"><span class="fa fa-film"></span>Preview</a>
+										<img class='img-responsive' src="media/demo-page/mac.png" alt='toyota'/>
+										<form action="/" method="post">
+											<input type="checkbox" name="check8" id='check8'/>
+											<label for="check8" class="b-items__cars-one-img-check"><span class="fa fa-check"></span></label>
+										</form>
 									</div>
 									<div class="b-items__cell-info">
 										<div class="s-lineDownLeft b-items__cell-info-title">
@@ -468,16 +488,19 @@
 												</div>
 											</div>
 										</div>
-										<h5 class="b-items__cell-info-price"><span>Harga:</span>Rp 29,415</h5>
+										<div class="b-compare__images-item-price m-left">Rp 120,440</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4 col-md-6 col-xs-12 wow zoomInUp" data-wow-delay="0.5s">
 								<div class="b-items__cell">
 									<div class="b-items__cars-one-img">
-										<img class='img-responsive' src="media/260x230/lexusTable.jpg" alt='lexus'/>
-										<a data-toggle="modal" data-target="#myModal" href="#" class="b-items__cars-one-img-video"><span class="fa fa-film"></span>Preview</a>
+										<img class='img-responsive' src="media/demo-page/mac.png" alt='toyota'/>
 										<span class="b-items__cars-one-img-type m-listing">NEW LISTING</span>
+										<form action="/" method="post">
+											<input type="checkbox" name="check9" id='check9'/>
+											<label for="check9" class="b-items__cars-one-img-check"><span class="fa fa-check"></span></label>
+										</form>
 									</div>
 									<div class="b-items__cell-info">
 										<div class="s-lineDownLeft b-items__cell-info-title">
@@ -500,7 +523,7 @@
 												</div>
 											</div>
 										</div>
-										<h5 class="b-items__cell-info-price"><span>Harga:</span>Rp 29,415</h5>
+										<div class="b-compare__images-item-price m-left">Rp 120,440</div>
 									</div>
 								</div>
 							</div>
@@ -520,15 +543,40 @@
 			</div>
 		</div><!--b-items-->
 
-		
+		<div class="b-features">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9 col-md-offset-3 col-xs-6 col-xs-offset-6">
+						<ul class="b-features__items">
+							<li class="wow zoomInUp" data-wow-delay="0.3s" data-wow-offset="100">Low Prices, No Haggling</li>
+							<li class="wow zoomInUp" data-wow-delay="0.3s" data-wow-offset="100">Largest Car Dealership</li>
+							<li class="wow zoomInUp" data-wow-delay="0.3s" data-wow-offset="100">Multipoint Safety Check</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!--b-features-->
 
 		<div class="b-info">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 col-xs-6">
-						<address class="b-info__contacts" data-wow-delay="0.3s">
-							<p>About us</p>
-							<div class="b-info__contacts-item">
+						<aside class="b-info__aside wow zoomInLeft" data-wow-delay="0.3s">
+							<article class="b-info__aside-article">
+								<h3>OPENING HOURS</h3>
+								<div class="b-info__aside-article-item">
+									<h6>Sales Department</h6>
+									<p>Mon-Sat : 8:00am - 5:00pm<br />
+										Sunday is closed</p>
+								</div>
+								<div class="b-info__aside-article-item">
+									<h6>Service Department</h6>
+									<p>Mon-Sat : 8:00am - 5:00pm<br />
+										Sunday is closed</p>
+								</div>
+							</article>
+							<article class="b-info__aside-article">
+								<h3>About us</h3>
 								<p>Vestibulum varius od lio eget conseq
 									uat blandit, lorem auglue comm lodo 
 									nisl non ultricies lectus nibh mas lsa 
@@ -536,30 +584,31 @@
 									libero pede porttitor dacu msan esct
 									venenatis quis.</p>
 							</article>
-						</address>
+							<a href="about.html" class="btn m-btn">Read More<span class="fa fa-angle-right"></span></a>
+						</aside>
 					</div>
 					<div class="col-md-3 col-xs-6">
 						<div class="b-info__latest">
-							<h3>Facebook</h3>
-							<div class="b-info__latest-article" data-wow-delay="0.3s">
+							<h3>LATEST AUTOS</h3>
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__latest-article-photo m-audi"></div>
 								<div class="b-info__latest-article-info">
 									<h6><a href="detail.html">MERCEDES-AMG GT S</a></h6>
-									<p><span class="fa fa-user"></span> 35,000 </p>
+									<p><span class="fa fa-tachometer"></span> 35,000 KM</p>
 								</div>
 							</div>
-							<div class="b-info__latest-article" data-wow-delay="0.3s">
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__latest-article-photo m-audiSpyder"></div>
 								<div class="b-info__latest-article-info">
 									<h6><a href="#">AUDI R8 SPYDER V-8</a></h6>
-									<p><span class="fa fa-user"></span> 35,000 </p>
+									<p><span class="fa fa-tachometer"></span> 35,000 KM</p>
 								</div>
 							</div>
-							<div class="b-info__latest-article" data-wow-delay="0.3s">
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__latest-article-photo m-aston"></div>
 								<div class="b-info__latest-article-info">
 									<h6><a href="#">ASTON MARTIN VANTAGE</a></h6>
-									<p><span class="fa fa-user"></span> 35,000 </p>
+									<p><span class="fa fa-tachometer"></span> 35,000 KM</p>
 								</div>
 							</div>
 						</div>
@@ -567,21 +616,21 @@
 					<div class="col-md-3 col-xs-6">
 						<div class="b-info__twitter">
 							<h3>from twitter</h3>
-							<div class="b-info__twitter-article" data-wow-delay="0.3s">
+							<div class="b-info__twitter-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
 								<div class="b-info__twitter-article-content">
 									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
 									<span>20 minutes ago</span>
 								</div>
 							</div>
-							<div class="b-info__twitter-article" data-wow-delay="0.3s">
+							<div class="b-info__twitter-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
 								<div class="b-info__twitter-article-content">
 									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
 									<span>20 minutes ago</span>
 								</div>
 							</div>
-							<div class="b-info__twitter-article" data-wow-delay="0.3s">
+							<div class="b-info__twitter-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
 								<div class="b-info__twitter-article-content">
 									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
@@ -591,7 +640,7 @@
 						</div>
 					</div>
 					<div class="col-md-3 col-xs-6">
-						<address class="b-info__contacts" data-wow-delay="0.3s">
+						<address class="b-info__contacts wow zoomInUp" data-wow-delay="0.3s">
 							<p>contact us</p>
 							<div class="b-info__contacts-item">
 								<span class="fa fa-map-marker"></span>
@@ -624,17 +673,33 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-4">
-						<div class="b-footer__company" data-wow-delay="0.3s">
-							<img width="210" height="59" src="images/logo/logoF.png" alt="logo" />	
-							<p>&copy; 2015 Designed by jualanmotor</p>
+						<div class="b-footer__company wow fadeInLeft" data-wow-delay="0.3s">
+							<img src="images/logo/logoF.png" alt="logo" />	
+							<p>&copy; 2015 Designed by Templines &amp; Powered by WordPress.</p>
 						</div>
 					</div>
 					<div class="col-xs-8">
-						<div class="b-footer__content" data-wow-delay="0.3s">
+						<div class="b-footer__content wow fadeInRight" data-wow-delay="0.3s">
 							<div class="b-footer__content-social">
 								<a href="#"><span class="fa fa-facebook-square"></span></a>
 								<a href="#"><span class="fa fa-twitter-square"></span></a>
+								<a href="#"><span class="fa fa-google-plus-square"></span></a>
+								<a href="#"><span class="fa fa-instagram"></span></a>
+								<a href="#"><span class="fa fa-youtube-square"></span></a>
+								<a href="#"><span class="fa fa-skype"></span></a>
 							</div>
+							<nav class="b-footer__content-nav">
+								<ul>
+									<li><a href="home.html">Home</a></li>
+									<li><a href="404.html">Pages</a></li>
+									<li><a href="listings.html">Inventory</a></li>
+									<li><a href="about.html">About</a></li>
+									<li><a href="404.html">Services</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="listTable.html">Shop</a></li>
+									<li><a href="contacts.html">Contact</a></li>
+								</ul>
+							</nav>
 						</div>
 					</div>
 				</div>
