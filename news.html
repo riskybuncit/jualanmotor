@@ -25,33 +25,14 @@
 
 	</head>
 	<body class="m-blog" data-scrolling-animations="true">
-		<section class="b-modal">
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title" id="myModalLabel">Video</h4>
-						</div>
-						<div class="modal-body">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/a_ugz7GoHwY" allowfullscreen></iframe>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!--b-modal-->
-		<header class="b-topBar" data-wow-delay="0.7s">
+		<header class="b-topBar b-topBar__nav" data-wow-delay="0.7s">
 			<div class="container">
-				<div class="row">
+				<div class="row ">
 					<div class="col-md-12 col-xs-18">
 						<nav class="b-topBar__nav">
 							<ul>
-								<li><a href="register.html">Register</a></li>
-								<li><a href="#">Sign in</a></li>
-								<li><a href="#">Pasang Iklan</a></li>
+								<li><a style="color:#ffffff;" href="register.html">Register</a></li>
+								<li><a style="color:#ffffff;" href="#">Sign in</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -59,13 +40,11 @@
 			</div>
 		</header><!--b-topBar-->
 
-		<nav class="b-nav">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-3 col-xs-4">
-						<div class="b-nav__logo" data-wow-delay="0.3s">
-						<img src="images/logo/logo.png" alt="logo" />	
-						</div>
+		<div class="bg-yellow b-nav">
+			<div class="container bg-yellow">
+				<div class="row bg-yellow">
+					<div class="col-sm-3 col-xs-4 ">
+						<img src="images/logo/logo.png" alt="logo" />
 					</div>
 					<div class="col-sm-9 col-xs-8">
 						<div class="b-nav__list" data-wow-delay="0.3s">
@@ -92,17 +71,20 @@
 					</div>
 				</div>
 			</div>
-		</nav><!--b-nav-->
+		</div>
 
 		<section class="b-pageHeader">
 			<div class="container">
-				<h1 class=" wow zoomInLeft" data-wow-delay="0.5s">AutoClub Blog</h1>
-				<div class="b-pageHeader__search wow zoomInRight" data-wow-delay="0.5s">
-					<h3>Read Latest Auto News &amp; Reviews</h3>
+				<div class="row">
+					<div style="float:right; padding:2px 2px 2px 2px;">
+				<p style="text-align:center;"><img class="img-responsive"  src="images/backgrounds/iklandetail2.jpg" alt="ads" /></p>
+					</div>
+					<div style="float:right; padding:2px 2px 2px 2px;">
+				<p style="text-align:center;"><img class="img-responsive"  src="images/backgrounds/iklandetail.jpg" alt="camaro" /></p>
+			    	</div>	 
 				</div>
 			</div>
 		</section><!--b-pageHeader-->
-
 		<div class="b-breadCumbs s-shadow">
 			<div class="container wow zoomInUp" data-wow-delay="0.5s">
 				<a href="home.html" class="b-breadCumbs__page">Home</a><span class="fa fa-angle-right"></span><a href="blog.html" class="b-breadCumbs__page m-active">Blog Style 1</a>
@@ -383,6 +365,7 @@
 									</div>
 								</div>
 							</div>
+							<!--
 							<div class="b-blog__aside-text wow zoomInUp" data-wow-delay="0.3s">
 								<header class="s-lineDownLeft">
 									<h2 class="s-titleDet">WHY CHOOSE US?</h2>
@@ -395,7 +378,8 @@
 									egestas. Bulum ante ipsum primisn faucibus
 									orci luctus et ultrices posuere.</p>
 							</div>
-							<div class="b-blog__aside-reviews wow zoomInUp" data-wow-delay="0.3s">
+							-->
+							<!--<div class="b-blog__aside-reviews wow zoomInUp" data-wow-delay="0.3s">
 								<header class="s-lineDownLeft">
 									<h2 class="s-titleDet">LATEST REVIEWS</h2>
 								</header>
@@ -468,7 +452,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="b-blog__aside-archives wow zoomInUp" data-wow-delay="0.3s">
+							-->
+							<!--<div class="b-blog__aside-archives wow zoomInUp" data-wow-delay="0.3s">
 								<header class="s-lineDownLeft">
 									<h2 class="s-titleDet">ARCHIVES</h2>
 								</header>
@@ -481,6 +466,7 @@
 									</ul>
 								</nav>
 							</div>
+							-->
 							<div class="b-items__aside-sell wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-items__aside-sell-img">
 									<h3>SELL YOUR CAR</h3>
