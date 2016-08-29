@@ -9,15 +9,6 @@
 
 		<link href="css/master.css" rel="stylesheet">
 
-		<!-- SWITCHER -->
-		<link rel="stylesheet" id="switcher-css" type="text/css" href="assets/switcher/css/switcher.css" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color1.css" title="color1" media="all" data-default-color="true" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color2.css" title="color2" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color3.css" title="color3" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color4.css" title="color4" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color5.css" title="color5" media="all" />
-		<link rel="alternate stylesheet" type="text/css" href="assets/switcher/css/color6.css" title="color6" media="all" />
-
 		<!--[if lt IE 9]>
 		<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -26,29 +17,32 @@
 	</head>
 	<body class="m-index" data-scrolling-animations="true" data-equal-height=".b-auto__main-item">
 
-		<header class="b-topBar b-topBar__nav" data-wow-delay="0.7s">
+		<!-- Loader -->
+		<div id="page-preloader"><span class="spinner"></span></div>
+		<!-- Loader end -->		
+		<header class="b-topBar wow slideInDown" data-wow-delay="0.7s">
 			<div class="container">
-				<div class="row ">
-					<div class="col-md-12 col-xs-18">
+				<div class="row">					
+					<div class="col-md-4 col-xs-6 pull-right">
 						<nav class="b-topBar__nav">
 							<ul>
-								<li><a style="color:#ffffff;" href="register.html">Register</a></li>
-								<li><a style="color:#ffffff;" href="#">Sign in</a></li>
+								<li><a href="#">Register</a></li>
+								<li><a href="#">Sign in</a></li>
 							</ul>
 						</nav>
-					</div>
+					</div>					
 				</div>
 			</div>
 		</header><!--b-topBar-->
 
-		<div class="bg-yellow">
-			<div class="container bg-yellow">
-				<div class="row bg-yellow">
-					<div class="col-sm-3 col-xs-4 ">
-						<img src="images/logo/logo.png" alt="logo" />	
+		<nav class="b-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-xs-4">
+						<div class="b-nav__logo wow slideInLeft" data-wow-delay="0.3s"></div>
 					</div>
 					<div class="col-sm-9 col-xs-8">
-						<div class="b-nav__list" data-wow-delay="0.3s">
+						<div class="b-nav__list wow slideInRight" data-wow-delay="0.3s">
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
 									<span class="sr-only">Toggle navigation</span>
@@ -59,12 +53,12 @@
 							</div>
 							<div class="collapse navbar-collapse navbar-main-slide" id="nav">
 								<ul class="navbar-nav-menu">
-									<li class="active"><a href="home.html">HOME</a></li>
-									<li><a href="iklanterbaru.html">IKLAN TERBARU</a></li>
-									<li><a href="motor-bekas.html">MOTOR BEKAS</a></li>
-									<li><a href="motor-baru.html">MOTOR BARU</a></li>
-									<li><a href="blogTwo.html">BLOG</a></li>
-									<li><a href="news.html">NEWS</a></li>
+                                	<li class="active"><a href="#">Home</a></li>
+									<li><a href="#">Iklan Terbaru</a></li>
+									<li><a href="#">Motor Bekas</a></li>
+									<li><a href="#">Motor Baru</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">News</a></li>									
 									<li><a href="contacts.html">Contact</a></li>
 								</ul>
 							</div>
@@ -72,28 +66,35 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</nav><!--b-nav-->
 
-		<!--<section class="b-slider"> 
+		<section class="b-slider"> 
 			<div id="carousel" class="slide carousel carousel-fade">
 				<div class="carousel-inner">
 					<div class="item active">
-						<img src="media/main-slider/5.jpg" alt="sliderImg" />
+						<img src="images/backgrounds/bg-home.png" alt="sliderImg" />
 						<div class="container">
+							<div class="carousel-caption b-slider__info">
+								<h2>Selamat Datang di</h2>
+								<h2><strong>JUALANMOTOR.COM</strong></h2>
+                                <div class="s-submit wow zoomInUp" data-wow-delay="0.5s">
+                                    <input placeholder="Cari iklan motor disini" type="text" name="input1" />
+                                    <button class="btn b-btn">
+                                        <span class="fa fa-search"></span>
+                                    </button>
+                                </div>
+							</div>
 						</div>
-					</div>
+					</div>					
 				</div>
+				<!--a class="carousel-control right" href="#carousel" data-slide="next">
+					<span class="fa fa-angle-right m-control-right"></span>
+				</a>
+				<a class="carousel-control left" href="#carousel" data-slide="prev">
+					<span class="fa fa-angle-left m-control-left"></span>
+				</a-->
 			</div>
 		</section><!--b-slider-->
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
 
 		<section class="b-search">
 			<div class="container">
@@ -109,45 +110,33 @@
 							<div class="row">
 								<div class="col-xs-2">
 									<input id="type1" type="radio" name="type" />
-									<label for="type1" class="b-search__main-type-svg">
-										<img src="media/main-slider/1.png" alt="matic" />
-									</label>
-									<h5><label for="type1">TRAIL</label></h5>
+									<label for="type1" class="b-search__main-type-svg type_1"></label>
+									<h5><label for="type1">Trail</label></h5>
 								</div>
 								<div class="col-xs-2">
 									<input id="type2" type="radio" name="type" />
-									<label for="type2" class="b-search__main-type-svg">
-										<img src="media/main-slider/2.png" alt="matic" />
-									</label>
-									<h5><label for="type2">BEBEK</label></h5>
+									<label for="type2" class="b-search__main-type-svg type_2"></label>
+									<h5><label for="type2">Suv</label></h5>
 								</div>
 								<div class="col-xs-2">
 									<input id="type3" type="radio" name="type" />
-									<label for="type3" class="b-search__main-type-svg">
-										<img src="media/main-slider/3.png" alt="matic" />
-									</label>
-									<h5><label for="type3">SCOOTER</label></h5>
+									<label for="type3" class="b-search__main-type-svg type_3"></label>
+									<h5><label for="type3">Coupe</label></h5>
 								</div>
 								<div class="col-xs-2">
 									<input id="type4" type="radio" name="type" />
-									<label for="type4" class="b-search__main-type-svg">
-										<img src="media/main-slider/5.png" alt="matic" />
-									</label>
-									<h5><label for="type4">SPORT</label></h5>
+									<label for="type4" class="b-search__main-type-svg type_4"></label>
+									<h5><label for="type4">Convertible</label></h5>
 								</div>
 								<div class="col-xs-2">
-									<input id="type4" type="radio" name="type" />
-									<label for="type4" class="b-search__main-type-svg">
-										<img src="media/main-slider/6.png" alt="matic" />
-									</label>
-									<h5><label for="type4">HARLEY</label></h5>
+									<input id="type5" type="radio" name="type" />
+									<label for="type5" class="b-search__main-type-svg type_5"></label>
+									<h5><label for="type5">Sedan</label></h5>
 								</div>
 								<div class="col-xs-2">
-									<input id="type4" type="radio" name="type" />
-									<label for="type4" class="b-search__main-type-svg">
-										<img src="media/main-slider/7.png" alt="matic" />
-									</label>
-									<h5><label for="type4">STREET FIGHTER</label></h5>
+									<input id="type6" type="radio" name="type" />
+									<label for="type6" class="b-search__main-type-svg type_6"></label>
+									<h5><label for="type6">Minicar</label></h5>
 								</div>
 							</div>
 						</div>
@@ -158,33 +147,36 @@
 								<div class="m-firstSelects">
 									<div class="col-xs-4">
 										<select name="select1">
-											<option value="" selected="">BRAND</option>
+											<option value="" selected="">Any Make</option>
 										</select>
 										<span class="fa fa-caret-down"></span>
+										<p>MISSING MANUFACTURER?</p>
 									</div>
 									<div class="col-xs-4">
 										<select name="select2">
-											<option value="" selected="">JENIS MOTOR</option>
+											<option value="" selected="">Any Model</option>
 										</select>
 										<span class="fa fa-caret-down"></span>
+										<p>MISSING MODEL?</p>
 									</div>
 									<div class="col-xs-4">
 										<select name="select3">
-											<option value="" selected="">STATUS MOTOR</option>
+											<option value="" selected="">Vehicle Status</option>
 										</select>
 										<span class="fa fa-caret-down"></span>
+										<p>E.G:  NEW, USED, CERTIFIED</p>
 									</div>
 								</div>
 								<div class="m-secondSelects">
 									<div class="col-xs-4">
 										<select name="select4">
-											<option value="" selected="">Min Tahun</option>
+											<option value="" selected="">Min Year</option>
 										</select>
 										<span class="fa fa-caret-down"></span>
 									</div>
 									<div class="col-xs-4">
 										<select name="select5">
-											<option value="" selected="">Max Tahun</option>
+											<option value="" selected="">Max Year</option>
 										</select>
 										<span class="fa fa-caret-down"></span>
 									</div>
@@ -192,7 +184,7 @@
 							</div>
 							<div class="col-md-4 col-xs-12 text-left s-noPadding">
 								<div class="b-search__main-form-range">
-									<label>Harga</label>
+									<label>PRICE RANGE</label>
 									<div class="slider"></div>
 									<input type="hidden" name="min" class="j-min" />
 									<input type="hidden" name="max" class="j-max" />
@@ -207,610 +199,448 @@
 			</div>
 		</section><!--b-search-->
 
-		<section class="b-featured bg-black">
-			<div class="bg-black"> 
-			<div class="container ">
-				<h2 class="s-title" data-wow-delay="0.3s"><span style="color:#ddd;">Iklan Terpopuler<span></h2>
+		<section class="b-featured">
+			<div class="container">
+				<h2 class="s-title wow zoomInUp" data-wow-delay="0.3s">Iklan Terpopuler</h2>
 				<div id="carousel-small" class="owl-carousel enable-owl-carousel" data-items="4" data-navigation="true" data-auto-play="true" data-stop-on-hover="true" data-items-desktop="4" data-items-desktop-small="4" data-items-tablet="3" data-items-tablet-small="2">
 					<div>
-						<div class="b-featured__item" data-wow-delay="0.3s" data-wow-offset="150">
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
 							<a href="detail.html">
-								<img src="media/186x113/mers.jpg" alt="mers" />
+								<img src="images/backgrounds/bg_iklan.png" alt="mers" />
 								<span class="m-premium">Premium</span>
 							</a>
 							<div class="b-featured__item-price">
-								$184,900
+								Rp 13.000.000
 							</div>
 							<div class="clearfix"></div>
-							<h5><a href="detail.html">MERCEDES-AMG GT / GT S</a></h5>
-							<div class="b-featured__item-count"><span class="fa fa-user"></span>35,000</div>
+							<h5><a href="detail.html">JUDUL MOTOR TERPOPULER</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
 							<div class="b-featured__item-links">
-								<a href="#">Used</a>
+								<a href="#">Bekas</a>
 								<a href="#">2014</a>
 								<a href="#">Manual</a>
-								<a href="#">Orange</a>
-								<a href="#">Petrol</a>
 							</div>
 						</div>
 					</div>
 					<div>
-						<div class="b-featured__item" data-wow-delay="0.3s" data-wow-offset="150">
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
 							<a href="detail.html">
-								<img src="media/186x113/audi.jpg" alt="audi" />
+								<img src="images/backgrounds/bg_iklan.png" alt="audi" />
 							</a>
 							<div class="b-featured__item-price">
-								$95,900
+								Rp 13.000.000
 							</div>
 							<div class="clearfix"></div>
-							<h5><a href="detail.html">AUDI R8 SPYDER V-8</a></h5>
-							<div class="b-featured__item-count"><span class="fa fa-user"></span>0.00</div>
+							<h5><a href="detail.html">JUDUL MOTOR TERPOPULER</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00 KM</div>
 							<div class="b-featured__item-links">
-								<a href="#">Used</a>
-								<a href="#">2015</a>
+								<a href="#">Bekas</a>
+								<a href="#">2014</a>
 								<a href="#">Manual</a>
-								<a href="#">Orange</a>
-								<a href="#">Petrol</a>
 							</div>
 						</div>
 					</div>
 					<div>
-						<div class="b-featured__item" data-wow-delay="0.3s" data-wow-offset="150">
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
 							<a href="detail.html">
-								<img src="media/186x113/aston.jpg" alt="aston" />
+								<img src="images/backgrounds/bg_iklan.png" alt="aston" />
 								<span class="m-leasing">LEASING AVAILABLE</span>
 							</a>
 							<div class="b-featured__item-price">
-								$101,025
+								Rp 13.000.000
 							</div>
 							<div class="clearfix"></div>
-							<h5><a href="detail.html">ASTON MARTIN VANTAGE</a></h5>
-							<div class="b-featured__item-count"><span class="fa fa-user"></span>35,000</div>
+							<h5><a href="detail.html">JUDUL MOTOR TERPOPULER</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
 							<div class="b-featured__item-links">
-								<a href="#">Used</a>
+								<a href="#">Bekas</a>
 								<a href="#">2014</a>
 								<a href="#">Manual</a>
-								<a href="#">Orange</a>
-								<a href="#">Petrol</a>
 							</div>
 						</div>
 					</div>
 					<div>
-						<div class="b-featured__item" data-wow-delay="0.3s" data-wow-offset="150">
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
 							<a href="detail.html">
-								<img src="media/186x113/jaguar.jpg" alt="jaguar" />
+								<img src="images/backgrounds/bg_iklan.png" alt="jaguar" />
 							</a>
 							<div class="b-featured__item-price">
-								$130,825
+								Rp 13.000.000
 							</div>
 							<div class="clearfix"></div>
-							<h5><a href="detail.html">JAGUAR F-TYPE R</a></h5>
-							<div class="b-featured__item-count"><span class="fa fa-user"></span>0.00</div>
+							<h5><a href="detail.html">JUDUL MOTOR TERPOPULER</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00</div>
 							<div class="b-featured__item-links">
-								<a href="#">Used</a>
-								<a href="#">2015</a>
+								<a href="#">Bekas</a>
+								<a href="#">2014</a>
 								<a href="#">Manual</a>
-								<a href="#">Orange</a>
-								<a href="#">Petrol</a>
 							</div>
 						</div>
 					</div>
 					<div>
-						<div class="b-featured__item" data-wow-delay="0.3s" data-wow-offset="150">
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
 							<a href="detail.html">
-								<img src="media/186x113/mers.jpg" alt="mers" />
+								<img src="images/backgrounds/bg_iklan.png" alt="mers" />
 								<span class="m-premium">Premium</span>
 							</a>
 							<div class="b-featured__item-price">
-								$184,900
+								Rp 13.000.000
 							</div>
 							<div class="clearfix"></div>
-							<h5><a href="detail.html">MERCEDES-AMG GT / GT S</a></h5>
-							<div class="b-featured__item-count"><span class="fa fa-user"></span>35,000</div>
+							<h5><a href="detail.html">JUDUL MOTOR TERPOPULER</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
 							<div class="b-featured__item-links">
-								<a href="#">Used</a>
+								<a href="#">Bekas</a>
 								<a href="#">2014</a>
 								<a href="#">Manual</a>
-								<a href="#">Orange</a>
-								<a href="#">Petrol</a>
 							</div>
 						</div>
 					</div>
 					<div>
-						<div class="b-featured__item" data-wow-delay="0.3s" data-wow-offset="150">
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
 							<a href="detail.html">
-								<img src="media/186x113/audi.jpg" alt="audi" />
+								<img src="images/backgrounds/bg_iklan.png" alt="audi" />
 							</a>
 							<div class="b-featured__item-price">
-								$95,900
+								Rp 13.000.000
 							</div>
 							<div class="clearfix"></div>
-							<h5><a href="detail.html">AUDI R8 SPYDER V-8</a></h5>
-							<div class="b-featured__item-count"><span class="fa fa-user"></span>0.00</div>
+							<h5><a href="detail.html">JUDUL MOTOR TERPOPULER</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00 KM</div>
 							<div class="b-featured__item-links">
-								<a href="#">Used</a>
-								<a href="#">2015</a>
+								<a href="#">Bekas</a>
+								<a href="#">2014</a>
 								<a href="#">Manual</a>
-								<a href="#">Orange</a>
-								<a href="#">Petrol</a>
 							</div>
 						</div>
 					</div>
 					<div>
-						<div class="b-featured__item" data-wow-delay="0.3s" data-wow-offset="150">
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
 							<a href="detail.html">
-								<img src="media/186x113/aston.jpg" alt="aston" />
+								<img src="images/backgrounds/bg_iklan.png" alt="aston" />
 								<span class="m-leasing">LEASING AVAILABLE</span>
 							</a>
 							<div class="b-featured__item-price">
-								$101,025
+								Rp 13.000.000
 							</div>
 							<div class="clearfix"></div>
-							<h5><a href="detail.html">ASTON MARTIN VANTAGE</a></h5>
-							<div class="b-featured__item-count"><span class="fa fa-user"></span>35,000</div>
+							<h5><a href="detail.html">JUDUL MOTOR TERPOPULER</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
 							<div class="b-featured__item-links">
-								<a href="#">Used</a>
+								<a href="#">Bekas</a>
 								<a href="#">2014</a>
 								<a href="#">Manual</a>
-								<a href="#">Orange</a>
-								<a href="#">Petrol</a>
 							</div>
 						</div>
 					</div>
 					<div>
-						<div class="b-featured__item" data-wow-delay="0.3s" data-wow-offset="150">
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
 							<a href="detail.html">
-								<img src="media/186x113/jaguar.jpg" alt="jaguar" />
+								<img src="images/backgrounds/bg_iklan.png" alt="jaguar" />
 							</a>
 							<div class="b-featured__item-price">
-								$130,825
+								Rp 13.000.000
 							</div>
 							<div class="clearfix"></div>
-							<h5><a href="detail.html">JAGUAR F-TYPE R</a></h5>
-							<div class="b-featured__item-count"><span class="fa fa-user"></span>0.00</div>
+							<h5><a href="detail.html">JUDUL MOTOR TERPOPULER</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00 KM</div>
 							<div class="b-featured__item-links">
-								<a href="#">Used</a>
-								<a href="#">2015</a>
+								<a href="#">Bekas</a>
+								<a href="#">2014</a>
 								<a href="#">Manual</a>
-								<a href="#">Orange</a>
-								<a href="#">Petrol</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		</section><!--b-featured-->
-
-
-		
-
-
-		<!--<section class="b-auto">
+        
+        <section class="b-featured" style="background-color: transparent !important;padding:50px 0px 5px !important;">
 			<div class="container">
-				<h5 class="s-titleBg wow zoomInLeft" data-wow-delay="0.3s" data-wow-offset="100">GIVING OUR CUSTOMERS BEST DEALS</h5><br />
-				<h2 class="s-title wow zoomInRight" data-wow-delay="0.3s" data-wow-offset="100">BEST OFFERS FROM AUTOCLUB</h2>
-				<div class="row">
-					<div class="col-xs-5 col-sm-4 col-md-3">
-						<aside class="b-auto__main-nav wow zoomInLeft" data-wow-delay="0.3s" data-wow-offset="100">
-							<ul>
-								<li class="active"><a href="#">All Manufacturers</a><span class="fa fa-angle-right"></span></li>
-								<li><a href="#">Chevrolet</a></li>
-								<li><a href="#">Honda</a></li>
-								<li><a href="#">Toyota</a></li>
-								<li><a href="#">Bmw</a></li>
-								<li><a href="#">Volkswagen</a></li>
-								<li><a href="#">Ferrari</a></li>
-								<li><a href="#">Audi</a></li>
-							</ul>
-						</aside>
-					</div>
-					<div class="col-md-9 col-sm-8 col-xs-7">
-						<div class="b-auto__main">
-							<div class="col-md-11 col-md-offset-1 col-xs-12">
-								<a href="#"  class="b-auto__main-toggle s-lineDownCenter m-active j-tab wow zoomInLeft" data-wow-delay="0.3s" data-wow-offset="100" data-to="#first">MOTOR TERBARU</a>
-								<a href="#" class="b-auto__main-toggle j-tab wow zoomInRight" data-wow-delay="0.3s" data-wow-offset="100" data-to="#second">MOTOR KREDIT</a>
+				<h2 class="s-title wow zoomInUp" data-wow-delay="0.3s" style="color:#333333 !important;">Iklan Terbaru</h2>
+				<div class="owl-carousel enable-owl-carousel" data-items="4" data-navigation="false" data-auto-play="false" data-stop-on-hover="true" data-items-desktop="4" data-items-desktop-small="4" data-items-tablet="3" data-items-tablet-small="2">
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="mers" />
+								<span class="m-premium">Premium</span>
+							</a>
+							<div class="b-featured__item-price">
+								Rp 13.000.000
 							</div>
 							<div class="clearfix"></div>
-							<div class="row m-margin" id="first">
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
-										<img class="img-responsive"  src="media/270x150/acura.jpg" alt="mazda" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">Acura RLX Sport Hybrid</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$44,380
-											</span>
-											<span class="m-number">
-												<span class="fa fa-user"></span>35,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
-										<img class="img-responsive"  src="media/270x150/nissan.jpg" alt="mazda" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">2015 Nissan Juke</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$95,900
-											</span>
-											<span class="m-number">
-												<span class="fa fa-user"></span>12,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
-										<img class="img-responsive"  src="media/270x150/acura2016.jpg" alt="mazda" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">2016 Acura NSX </a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$28,995
-											</span>
-											<span class="m-number">
-												<span class="fa fa-user"></span>5,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
-										<img class="img-responsive"  src="media/270x150/amg.jpg" alt="mazda" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">2015 Mercedes-AMG C63</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$95,900
-											</span>
-											<span class="m-number">
-												<span class="fa fa-user"></span>12,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
-										<img class="img-responsive"  src="media/270x150/brabus.jpg" alt="mazda" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">Brabus 850 6.0 Biturbo Coupe</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$28,995
-											</span>
-											<span class="m-number">
-												<span class="fa fa-user"></span>5,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
-										<img class="img-responsive"  src="media/270x150/range.jpg" alt="mazda" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">Land Rover Range Rover</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$44,380
-											</span>
-											<span class="m-number">
-												<span class="fa fa-user"></span>35,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row m-margin" id="second">
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
-										<img class="img-responsive"  src="media/270x150/acura.jpg" alt="mazda" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">Acura RLX Sport Hybrid</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$44,380
-											</span>
-											<span class="m-number">
-												<span class="fa fa-user"></span>35,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
-										<img class="img-responsive"  src="media/270x150/acura.jpg" alt="mazda" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">Acura RLX Sport Hybrid</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$44,380
-											</span>
-											<span class="m-number">
-												<span class="fa fa-user"></span>35,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
-										<img class="img-responsive"  src="media/270x150/acura.jpg" alt="mazda" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">Acura RLX Sport Hybrid</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$44,380
-											</span>
-											<span class="m-number">
-												<span class="fa fa-user"></span>35,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
-										<img class="img-responsive"  src="media/270x150/acura.jpg" alt="mazda" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">Acura RLX Sport Hybrid</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$44,380
-											</span>
-											<span class="m-number">
-												<span class="fa fa-user"></span>35,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
-										<img class="img-responsive"  src="media/270x150/acura.jpg" alt="mazda" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">Acura RLX Sport Hybrid</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$44,380
-											</span>
-											<span class="m-number">
-												<span class="fa fa-user"></span>35,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-6 col-xs-12">
-									<div class="b-auto__main-item wow slideInUp" data-wow-delay="0.3s" data-wow-offset="100">
-										<img class="img-responsive"  src="media/270x150/acura.jpg" alt="mazda" />
-										<div class="b-world__item-val">
-											<span class="b-world__item-val-title">REGISTERED <span>2014</span></span>
-										</div>
-										<h2><a href="detail.html">Acura RLX Sport Hybrid</a></h2>
-										<div class="b-auto__main-item-info">
-											<span class="m-price">
-												$44,380
-											</span>
-											<span class="m-number">
-												<span class="fa fa-user"></span>35,000 KM
-											</span>
-										</div>
-										<div class="b-featured__item-links m-auto">
-											<a href="#">Used</a>
-											<a href="#">2014</a>
-											<a href="#">Manual</a>
-											<a href="#">Orange</a>
-											<a href="#">Petrol</a>
-										</div>
-									</div>
-								</div>
+							<h5><a href="detail.html" style="color:#333333 !important;">JUDUL MOTOR TERBARU</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
+							<div class="b-featured__item-links">
+								<a href="#">Bekas</a>
+								<a href="#">2014</a>
+								<a href="#">Manual</a>
 							</div>
 						</div>
-
-				<div class="b-items__pagination clearfix">
-								<div class="b-items__pagination-main wow zoomInUp" data-wow-delay="0.5s">
-									<a data-toggle="modal" data-target="#myModal" href="#" class="m-left"><span class="fa fa-angle-left"></span></a>
-									<span class="m-active"><a href="#">1</a></span>
-									<span><a href="#">2</a></span>
-									<span><a href="#">3</a></span>
-									<span><a href="#">4</a></span>
-									<a href="#" class="m-right"><span class="fa fa-angle-right"></span></a>    
-								</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="audi" />
+							</a>
+							<div class="b-featured__item-price">
+								Rp 13.000.000
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html" style="color:#333333 !important;">JUDUL MOTOR TERBARU</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00 KM</div>
+							<div class="b-featured__item-links">
+								<a href="#">Bekas</a>
+								<a href="#">2014</a>
+								<a href="#">Manual</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="aston" />
+								<span class="m-leasing">LEASING AVAILABLE</span>
+							</a>
+							<div class="b-featured__item-price">
+								Rp 13.000.000
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html" style="color:#333333 !important;">JUDUL MOTOR TERBARU</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
+							<div class="b-featured__item-links">
+								<a href="#">Bekas</a>
+								<a href="#">2014</a>
+								<a href="#">Manual</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="jaguar" />
+							</a>
+							<div class="b-featured__item-price">
+								Rp 13.000.000
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html" style="color:#333333 !important;">JUDUL MOTOR TERBARU</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00</div>
+							<div class="b-featured__item-links">
+								<a href="#">Bekas</a>
+								<a href="#">2014</a>
+								<a href="#">Manual</a>
+							</div>
+						</div>
+					</div>					
 				</div>
-
+                <div id="carousel-small" class="owl-carousel enable-owl-carousel" data-items="4" data-navigation="false" data-auto-play="false" data-stop-on-hover="true" data-items-desktop="4" data-items-desktop-small="4" data-items-tablet="3" data-items-tablet-small="2">
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="mers" />
+								<span class="m-premium">Premium</span>
+							</a>
+							<div class="b-featured__item-price">
+								Rp 13.000.000
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html" style="color:#333333 !important;">JUDUL MOTOR TERBARU</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
+							<div class="b-featured__item-links">
+								<a href="#">Bekas</a>
+								<a href="#">2014</a>
+								<a href="#">Manual</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="audi" />
+							</a>
+							<div class="b-featured__item-price">
+								Rp 13.000.000
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html" style="color:#333333 !important;">JUDUL MOTOR TERBARU</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00 KM</div>
+							<div class="b-featured__item-links">
+								<a href="#">Bekas</a>
+								<a href="#">2014</a>
+								<a href="#">Manual</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="aston" />
+								<span class="m-leasing">LEASING AVAILABLE</span>
+							</a>
+							<div class="b-featured__item-price">
+								Rp 13.000.000
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html" style="color:#333333 !important;">JUDUL MOTOR TERBARU</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>35,000 KM</div>
+							<div class="b-featured__item-links">
+								<a href="#">Bekas</a>
+								<a href="#">2014</a>
+								<a href="#">Manual</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="jaguar" />
+							</a>
+							<div class="b-featured__item-price">
+								Rp 13.000.000
+							</div>
+							<div class="clearfix"></div>
+							<h5><a href="detail.html" style="color:#333333 !important;">JUDUL MOTOR TERBARU</a></h5>
+							<div class="b-featured__item-count"><span class="fa fa-tachometer"></span>0.00</div>
+							<div class="b-featured__item-links">
+								<a href="#">Bekas</a>
+								<a href="#">2014</a>
+								<a href="#">Manual</a>
+							</div>
+						</div>
+					</div>					
+				</div>                               
+			</div>
+            <div class="clearfix"><br><br></div>
+            <h2 class="s-title wow zoomInUp" data-wow-delay="0.3s" style="border:hidden !important;">
+                <div class="b-search__main-form-submit">	
+                <button type="submit" class="btn m-btn" style="padding:10px !important;background:#f7ce2b none repeat scroll 0% 0%;color:#333333 !important;">Lihat Selengkapnya</button>	
+                </div>
+            </h2> 
+		</section>
+        
+        <section class="b-featured" style="background-color:transparent !important;box-shadow:none !important;padding:50px 0px 75px !important;">
+			<div class="container">
+				<h2 class="s-title wow zoomInUp" data-wow-delay="0.3s" style="color:#333333 !important;">Brand Motor</h2>
+				<div id="carousel-small" class="owl-carousel enable-owl-carousel" data-items="4" data-navigation="true" data-auto-play="true" data-stop-on-hover="true" data-items-desktop="4" data-items-desktop-small="4" data-items-tablet="3" data-items-tablet-small="2">
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="mers" />
+							</a>							
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="audi" />
+							</a>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="aston" />
+							</a>							
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="jaguar" />
+							</a>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="mers" />
+							</a>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="audi" />
+							</a>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="aston" />
+							</a>
+						</div>
+					</div>
+					<div>
+						<div class="b-featured__item wow rotateIn" data-wow-delay="0.3s" data-wow-offset="150">
+							<a href="detail.html">
+								<img src="images/backgrounds/bg_iklan_.png" alt="jaguar" />
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section><!--b-auto-->
+		</section><!--b-featured-->														
+
+		<div class="b-features" style="background-color:#ffffff !important;">&nbsp;</div><!--b-features-->
+
 		<div class="b-info">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 col-xs-6">
-						<address class="b-info__contacts" data-wow-delay="0.3s">
-							<p>About us</p>
-							<div class="b-info__contacts-item">
-								<p>Vestibulum varius od lio eget conseq
-									uat blandit, lorem auglue comm lodo 
-									nisl non ultricies lectus nibh mas lsa 
-									Duis scelerisque aliquet. Ante donec
-									libero pede porttitor dacu msan esct
-									venenatis quis.</p>
-							</article>
-						</address>
+					<div class="col-md-4 col-xs-6">
+						<aside class="b-info__aside wow zoomInLeft" data-wow-delay="0.3s">
+							<article class="b-info__aside-article">
+                            	<h3><span class="fa fa-instagram"></span><a href="#"> @jualanmotorcom</a></h3>
+                            	<!-- www.intagme.com -->
+<iframe src="http://www.intagme.com/in/?u=cGFtZWxhYW5kZXJzb258aW58MTAwfDR8NHwyMjIyMjJ8bm98MXx1bmRlZmluZWR8bm8=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:350px" ></iframe>								
+							</article>							
+						</aside>
 					</div>
-					<div class="col-md-3 col-xs-6">
-						<div class="b-info__latest">
-							<h3>Facebook</h3>
-							<div class="b-info__latest-article" data-wow-delay="0.3s">
+					<div class="col-md-4 col-xs-6">
+						<div class="b-info__latest wow zoomInUp" data-wow-delay="0.3s">
+							<h3>KNALPOT</h3>
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__latest-article-photo m-audi"></div>
 								<div class="b-info__latest-article-info">
 									<h6><a href="detail.html">MERCEDES-AMG GT S</a></h6>
-									<p><span class="fa fa-user"></span> 35,000 KM</p>
+									<p style="margin:0px;">12 - 01 - 2016</p>
+                                    <p style="color:#ffffff;margin:0px;line-height:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida convallis lorem ac tincidunt. Nulla laoreet diam quis.</p>
 								</div>
 							</div>
-							<div class="b-info__latest-article" data-wow-delay="0.3s">
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__latest-article-photo m-audiSpyder"></div>
 								<div class="b-info__latest-article-info">
 									<h6><a href="#">AUDI R8 SPYDER V-8</a></h6>
-									<p><span class="fa fa-user"></span> 35,000 KM</p>
+									<p style="margin:0px;">12 - 01 - 2016</p>
+                                    <p style="color:#ffffff;margin:0px;line-height:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida convallis lorem ac tincidunt. Nulla laoreet diam quis.</p>
 								</div>
 							</div>
-							<div class="b-info__latest-article" data-wow-delay="0.3s">
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__latest-article-photo m-aston"></div>
 								<div class="b-info__latest-article-info">
 									<h6><a href="#">ASTON MARTIN VANTAGE</a></h6>
-									<p><span class="fa fa-user"></span> 35,000 KM</p>
+									<p style="margin:0px;">12 - 01 - 2016</p>
+                                    <p style="color:#ffffff;margin:0px;line-height:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida convallis lorem ac tincidunt. Nulla laoreet diam quis.</p>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3 col-xs-6">
-						<div class="b-info__twitter">
-							<h3>from twitter</h3>
-							<div class="b-info__twitter-article" data-wow-delay="0.3s">
-								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
-								<div class="b-info__twitter-article-content">
-									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
-									<span>20 minutes ago</span>
-								</div>
-							</div>
-							<div class="b-info__twitter-article" data-wow-delay="0.3s">
-								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
-								<div class="b-info__twitter-article-content">
-									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
-									<span>20 minutes ago</span>
-								</div>
-							</div>
-							<div class="b-info__twitter-article" data-wow-delay="0.3s">
-								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
-								<div class="b-info__twitter-article-content">
-									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
-									<span>20 minutes ago</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6">
-						<address class="b-info__contacts" data-wow-delay="0.3s">
-							<p>contact us</p>
+					</div>					
+					<div class="col-md-4 col-xs-6">
+						<address class="b-info__contacts wow zoomInUp" data-wow-delay="0.3s">
+							<p>Hubungi Kami</p>
 							<div class="b-info__contacts-item">
 								<span class="fa fa-map-marker"></span>
-								<em>202 W 7th St, Suite 233 Los Angeles,
-									California 90014 USA</em>
+								<em>Jln Pejaten raya no. 33D. Pasar Minggu. Jakarta Selatan</em>
 							</div>
 							<div class="b-info__contacts-item">
 								<span class="fa fa-phone"></span>
-								<em>Phone:  1-800- 624-5462</em>
-							</div>
-							<div class="b-info__contacts-item">
-								<span class="fa fa-fax"></span>
-								<em>FAX:  1-800- 624-5462</em>
+								<em>Phone:  +6221 - 78838123</em>
 							</div>
 							<div class="b-info__contacts-item">
 								<span class="fa fa-envelope"></span>
-								<em>Email:  info@domain.com</em>
+								<em>Email:  info@jualanmotor.com</em>
 							</div>
-						</address>
-						<address class="b-info__map">
-							<a href="contacts.html">Open Location Map</a>
 						</address>
 					</div>
 				</div>
@@ -822,17 +652,30 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-4">
-						<div class="b-footer__company" data-wow-delay="0.3s">
-							<img src="images/logo/logoF.png" alt="logo" />	
-							<p>&copy; 2016 jualanmotor</p>
+						<div class="b-footer__company wow fadeInLeft" data-wow-delay="0.3s">
+							<div class="b-nav__logo" style="height:70px !important;"></div>
+							<p>&copy; 2016 jualanmotor.com</p>
 						</div>
 					</div>
 					<div class="col-xs-8">
-						<div class="b-footer__content" data-wow-delay="0.3s">
+						<div class="b-footer__content wow fadeInRight" data-wow-delay="0.3s">
 							<div class="b-footer__content-social">
 								<a href="#"><span class="fa fa-facebook-square"></span></a>
 								<a href="#"><span class="fa fa-twitter-square"></span></a>
+								<a href="#"><span class="fa fa-instagram"></span></a>
+								<a href="#"><span class="fa fa-youtube-square"></span></a>
 							</div>
+							<nav class="b-footer__content-nav">
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Iklan Terbaru</a></li>
+									<li><a href="#">Motor Bekas</a></li>
+									<li><a href="#">Motor Baru</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</nav>
 						</div>
 					</div>
 				</div>

@@ -94,8 +94,8 @@ a.btn.m-btn.m-pay:hover,
 .m-index .b-count .m-main,
 .demo_changer .demo-icon
 {
-    background-color:#b60303;
-    fill: #b60303;
+    background-color:#f76d2b;
+    fill: #f76d2b;
 }
 
 
@@ -105,8 +105,6 @@ a.btn.m-btn.m-pay:hover,
 .b-auto__main .b-auto__main-toggle.m-active,
 .b-auto__main-nav li:hover a,
 .b-auto__main-nav li.active a,
-.navbar-nav-menu li:hover a,
-.navbar-nav-menu li.active a,
 .b-review__main h5 em,
 .b-info__latest > h3,.b-info__aside-article > h3,.b-info__twitter > h3,.b-info__contacts > p,
 .m-home .b-search__main >h4,
@@ -146,8 +144,8 @@ a.btn.m-btn.m-pay:hover,
 .b-items__pagination-main > span.m-active a,
 .b-items__pagination-main > span:hover a
 {
-    color:#b60303;
-    fill:#b60303;
+    color:#f76d2b;
+    fill:#f76d2b;
 }
 
 .b-nav__list ul li a:hover,
@@ -156,8 +154,6 @@ a.btn.m-btn.m-pay:hover,
 .b-world__item h2,
 .b-auto__main-nav li.active a,
 .b-auto__main-nav li:hover a,
-.navbar-nav-menu li:hover a,
-.navbar-nav-menu li.active a,
 .b-info__aside > a.btn.m-btn:hover,
 .b-info__aside,
 .m-home .b-homeAuto__world-item-info > h2:before,
@@ -183,17 +179,17 @@ a.btn.m-btn.m-pay:hover,
 .b-auto__main-nav li.active:before,
 .b-welcome__services-circle
 {
-    border-color:#b60303;
+    border-color:#f76d2b;
 }
 
 .b-submit__aside-step-inner-info-triangle
 {
-    border-left-color:#b60303;
+    border-left-color:#f76d2b;
 }
 
 .b-compare__block-title > a,.b-more__info-block-title a
 {
-    border-bottom-color:#b60303;
+    border-bottom-color:#f76d2b;
 }
 
 /* Color two */
