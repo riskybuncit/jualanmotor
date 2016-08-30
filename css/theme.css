@@ -475,15 +475,3 @@ label.s-submitCheck{
 	top: auto;
 	width: 92%;
 }
-
-/*KOPRAL CSS*/
-.s-title-k{
-    font: 700 18px 'Open Sans',sans-serif;
-    margin: 0 0 50px 0;
-    padding: 0 15px;
-    border-left: 4px solid #f8ce2c;
-    border-right: 4px solid #f8ce2c;
-    text-transform: uppercase;
-    display: inline-block;
-    letter-spacing: 1px;
-}
