@@ -16,7 +16,63 @@
 
 	</head>
 	<body class="m-index" data-scrolling-animations="true" data-equal-height=".b-auto__main-item">
-
+		<section class="b-modal">        	
+			<div id="modal1" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">SIGN IN</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="btn-group-justified">
+                               <a class="btn btn-social btn-facebook btn-group" style="border-radius:0;">
+                                  <i class="fa fa-facebook"></i> Sign in with Facebook
+                                </a>
+                                <a class="btn btn-social btn-twitter btn-group" style="border-radius:0;">
+                                  <i class="fa fa-twitter"></i> Sign in with Twitter
+                                </a>
+                            </p>
+                            <br>
+                            <p class="legend">
+                                <span>Atau</span>
+                            </p>
+                            <form id="contactForm" novalidate class="s-form wow zoomInUp" data-wow-delay="0.5s">
+                                <input type="text" placeholder="Alamat Email" value="" name="user-name" id="" />
+                                <input type="password" placeholder="Password" value="" name="user-email" id="" />           
+                                    <div class="b-search__main-form-submit">
+                                    	<button id="close1_open2" type="button" class="small" style="background-color:transparent !important; border:none !important;margin-top:8px;color:#337AB7; text-transform:capitalize;">Lupa Password?</button>
+                                        <button type="submit" class="btn m-btn" style="margin-top:0px !important;">SIGN IN<span class="fa fa-angle-right"></span></button>                                        
+                                    </div>  
+                            </form>                            
+                        </div>
+                        <div class="modal-footer small">
+                            Belum punya akun? <a href="#">Daftar</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div id="modal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Lupa Password?</h4>
+                        </div>
+                        <div class="modal-body">                        	
+                            <form id="contactForm" novalidate class="s-form wow zoomInUp" data-wow-delay="0.5s">
+                                <p class="small">Masukkan alamat email Anda dan kami akan mengirimkan detil informasi untuk mereset password Anda.</p>
+                                <input type="text" placeholder="Alamat Email" value="" name="user-name" id="" />
+                                <div class="b-search__main-form-submit">
+                                    <button type="submit" class="btn m-btn" style="margin-top:0px !important;">SUBMIT<span class="fa fa-angle-right"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div><!--b-modal-->
+		</section><!--b-modal-->	
+		
 		<!-- Loader -->
 		<div id="page-preloader"><span class="spinner"></span></div>
 		<!-- Loader end -->		
@@ -53,12 +109,12 @@
 							</div>
 							<div class="collapse navbar-collapse navbar-main-slide" id="nav">
 								<ul class="navbar-nav-menu">
-                                	<li class="active"><a href="#">Home</a></li>
-									<li><a href="#">Iklan Terbaru</a></li>
-									<li><a href="#">Motor Bekas</a></li>
-									<li><a href="#">Motor Baru</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">News</a></li>									
+                                	<li class="active"><a href="home.html">HOME</a></li>
+									<li><a href="iklanterbaru.html">IKLAN TERBARU</a></li>
+									<li><a href="motor-bekas.html">MOTOR BEKAS</a></li>
+									<li><a href="motor-baru.html">MOTOR BARU</a></li>
+									<li><a href="blogTwo.html">BLOG</a></li>
+									<li><a href="news.html">NEWS</a></li>
 									<li><a href="contacts.html">Contact</a></li>
 								</ul>
 							</div>
