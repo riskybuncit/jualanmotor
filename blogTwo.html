@@ -24,8 +24,25 @@
 		<![endif]-->
 
 	</head>
-	<body class="m-blogTwo" data-scrolling-animations="true" >
-
+	<body class="m-blog" data-scrolling-animations="true">
+		<section class="b-modal">
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">Video</h4>
+						</div>
+						<div class="modal-body">
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/a_ugz7GoHwY" allowfullscreen></iframe>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--b-modal-->
 		<header class="b-topBar" data-wow-delay="0.7s">
 			<div class="container">
 				<div class="row">
@@ -47,7 +64,6 @@
 				<div class="row">
 					<div class="col-sm-3 col-xs-4">
 						<div class="b-nav__logo" data-wow-delay="0.3s">
-						<img src="images/logo/logo.png" alt="logo" />	
 						</div>
 					</div>
 					<div class="col-sm-9 col-xs-8">
@@ -66,7 +82,7 @@
 									<li><a href="iklanterbaru.html">IKLAN TERBARU</a></li>
 									<li><a href="motor-bekas.html">MOTOR BEKAS</a></li>
 									<li><a href="motor-baru.html">MOTOR BARU</a></li>
-									<li class="active"><a href="blogTwo.html">BLOG</a></li>
+									<li><a href="blogTwo.html">BLOG</a></li>
 									<li><a href="news.html">NEWS</a></li>
 									<li><a href="contacts.html">Contact</a></li>
 								</ul>
@@ -79,22 +95,254 @@
 
 		<section class="b-pageHeader">
 			<div class="container">
-				<h1 class=" wow zoomInLeft" data-wow-delay="0.3s">AutoClub Blog</h1>
+				<a href="#"><img src="images/elements/banner-JM1.png" width="400" height="92"></a>
 				<div class="b-pageHeader__search wow zoomInRight" data-wow-delay="0.3s">
-					<h3>Read Latest Auto News &amp; Reviews</h3>
+					<a href="#"><img src="images/elements/banner-goog1.png" width="100%"></a>
 				</div>
 			</div>
 		</section><!--b-pageHeader-->
 
 		<div class="b-breadCumbs s-shadow">
-			<div class="container wow zoomInUp" data-wow-delay="0.3s">
-				<a href="home.html" class="b-breadCumbs__page">Home</a><span class="fa fa-angle-right"></span><a href="blogTwo.html" class="b-breadCumbs__page m-active">Blog Style 2</a>
+			<div class="container wow zoomInUp" data-wow-delay="0.5s">
+				<a href="home.html" class="b-breadCumbs__page">Home</a><span class="fa fa-angle-right"></span><a href="blog.html" class="b-breadCumbs__page m-active">Blog Style 1</a>
 			</div>
 		</div><!--b-breadCumbs-->
 
-		<div class="b-blog s-shadow">
+		<section class="b-blog s-shadow">
 			<div class="container">
 				<div class="row">
+					<div class="col-md-9 col-xs-12">
+						<div class="b-blog__posts">
+							<div class="b-blog__posts-one wow zoomInUp" data-wow-delay="0.3s">
+								<div class="row m-noBlockPadding">
+									<div class="col-sm-1 col-xs-2">
+										<div class="b-blog__posts-one-author">
+											<div class="b-blog__posts-one-author-img">
+
+											</div>
+											<div class="b-blog__posts-one-share s-lineDownCenter">SHARE THIS</div>
+											<div class="b-blog__posts-one-social">
+												<div>
+													<a href="#"><span class="fa fa-facebook-square "></span></a>
+													<a href="#"><span class="fa  fa-twitter-square"></span></a>
+												</div>
+												<div>
+													<a href="#"><span class="fa fa-instagram "></span></a>
+													<a href="#"><span class="fa fa-youtube-square"></span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-11 col-xs-10">
+										<div class="b-blog__posts-one-body">
+											<header class="b-blog__posts-one-body-head">
+												<h2 class="s-titleDet">Redesigned 2016 Nissan Maxima Introduced</h2>
+												<div class="b-blog__posts-one-body-head-notes">
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-user"></span>Our Admin</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-calendar-o"></span>20th May 2015</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-comment"></span>5 Comments</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-tags"></span>AutoMarket, Tips &amp; Advice</span>
+												</div>
+											</header>
+											<div class="b-blog__posts-one-body-main">
+												<div class="b-blog__posts-one-body-main-img">
+													<ul class="bxslider enable-bx-slider" data-pager-custom="#bx-pager" data-mode="fade" data-pager-slide="false" data-mode-pager="horizontal" data-pager-qty="0">
+														<li><img class="img-responsive" src="media/750x300/blogBig1.jpg" alt="jaguar" /></li>
+														<li><img class="img-responsive" src="media/750x300/blogBig2.jpg" alt="jaguar" /></li>
+														<li><img class="img-responsive" src="media/750x300/blogBig3.jpg" alt="jaguar" /></li>
+													</ul>
+													<div class="b-blog__posts-one-body-main-img-small" id="bx-pager">
+														<a href="#" data-slide-index="0"><img src="media/90x65/smallBlog1.jpg" alt="car" /></a>
+														<a href="#" data-slide-index="1"><img src="media/90x65/smallBlog2.jpg" alt="car" /></a>
+														<a href="#" data-slide-index="2"><img src="media/90x65/smallBlog3.jpg" alt="car" /></a>
+													</div>
+												</div>
+												<p>Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus nunc. Nunc conseq usemdw veld metus imperdiet lacinia. In viverra dolor non justo. Proin molest erat inder rhoncus posuere de nibh quam  onsectet uer lectus acwl vulputate ligula lorem dolor. Donec nunc. Suspendisse potent. Integer blandit massa sit amet condimentum laoreet, diam elementum urna sed tincidunt lacus sapien pulvinar erat. Mauris vulputate mivitae lobortis. Lorem ipsum dolor sit amet consec etur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+												<a href="article.html" class="btn m-btn m-readMore">READ MORE<span class="fa fa-angle-right"></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="b-blog__posts-one wow zoomInUp" data-wow-delay="0.3s">
+								<div class="row m-noBlockPadding">
+									<div class="col-sm-1 col-xs-2">
+										<div class="b-blog__posts-one-author">
+											<div class="b-blog__posts-one-author-img">
+
+											</div>
+											<div class="b-blog__posts-one-share s-lineDownCenter">SHARE THIS</div>
+											<div class="b-blog__posts-one-social">
+												<div>
+													<a href="#"><span class="fa fa-google-plus-square "></span></a>
+													<a href="#"><span class="fa  fa-facebook-square"></span></a>
+												</div>
+												<div>
+													<a href="#"><span class="fa fa-twitter-square "></span></a>
+													<a href="#"><span class="fa fa-pinterest-square"></span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-11 col-xs-10">
+										<div class="b-blog__posts-one-body">
+											<header class="b-blog__posts-one-body-head">
+												<h2 class="s-titleDet">2015 Ferrari California T</h2>
+												<div class="b-blog__posts-one-body-head-notes">
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-user"></span>Our Admin</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-calendar-o"></span>20th May 2015</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-comment"></span>5 Comments</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-tags"></span>AutoMarket, Tips &amp; Advice</span>
+												</div>
+											</header>
+											<div class="b-blog__posts-one-body-main">
+												<div class="b-blog__posts-one-body-main-img">
+													<img class="img-responsive" src="media/blog/ferrariBlog.jpg" alt="ferrari" />
+													<a data-toggle="modal" data-target="#myModal" class="b-items__cars-one-img-video"><span class="fa fa-film"></span>VIDEO</a>
+												</div>
+												<p>Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus nunc. Nunc conseq usemdw veld metus imperdiet lacinia. In viverra dolor non justo. Proin molest erat inder rhoncus posuere de nibh quam  onsectet uer lectus acwl vulputate ligula lorem dolor. Donec nunc. Suspendisse potent. Integer blandit massa sit amet condimentum laoreet, diam elementum urna sed tincidunt lacus sapien pulvinar erat. Mauris vulputate mivitae lobortis. Lorem ipsum dolor sit amet consec etur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+												<a href="article.html" class="btn m-btn m-readMore">READ MORE<span class="fa fa-angle-right"></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="b-blog__posts-one wow zoomInUp" data-wow-delay="0.3s">
+								<div class="row m-noBlockPadding">
+									<div class="col-sm-1 col-xs-2">
+										<div class="b-blog__posts-one-author">
+											<div class="b-blog__posts-one-author-img">
+
+											</div>
+											<div class="b-blog__posts-one-share s-lineDownCenter">SHARE THIS</div>
+											<div class="b-blog__posts-one-social">
+												<div>
+													<a href="#"><span class="fa fa-google-plus-square "></span></a>
+													<a href="#"><span class="fa  fa-facebook-square"></span></a>
+												</div>
+												<div>
+													<a href="#"><span class="fa fa-twitter-square "></span></a>
+													<a href="#"><span class="fa fa-pinterest-square"></span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-11 col-xs-10">
+										<div class="b-blog__posts-one-body">
+											<header class="b-blog__posts-one-body-head">
+												<h2 class="s-titleDet">2015 Chrysler 300: 7 Things You Need to Know</h2>
+												<div class="b-blog__posts-one-body-head-notes">
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-user"></span>Our Admin</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-calendar-o"></span>20th May 2015</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-comment"></span>5 Comments</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-tags"></span>AutoMarket, Tips &amp; Advice</span>
+												</div>
+											</header>
+											<div class="b-blog__posts-one-body-main">
+												<div class="b-blog__posts-one-body-main-img">
+													<img class="img-responsive" src="media/blog/chrysler.jpg" alt="chrysler" />
+												</div>
+												<p>Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus nunc. Nunc conseq usemdw veld metus imperdiet lacinia. In viverra dolor non justo. Proin molest erat inder rhoncus posuere de nibh quam  onsectet uer lectus acwl vulputate ligula lorem dolor. Donec nunc. Suspendisse potent. Integer blandit massa sit amet condimentum laoreet, diam elementum urna sed tincidunt lacus sapien pulvinar erat. Mauris vulputate mivitae lobortis. Lorem ipsum dolor sit amet consec etur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+												<a href="article.html" class="btn m-btn m-readMore">READ MORE<span class="fa fa-angle-right"></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="b-blog__posts-one wow zoomInUp" data-wow-delay="0.3s">
+								<div class="row m-noBlockPadding">
+									<div class="col-sm-1 col-xs-2">
+										<div class="b-blog__posts-one-author">
+											<div class="b-blog__posts-one-author-img">
+
+											</div>
+											<div class="b-blog__posts-one-share s-lineDownCenter">SHARE THIS</div>
+											<div class="b-blog__posts-one-social">
+												<div>
+													<a href="#"><span class="fa fa-google-plus-square "></span></a>
+													<a href="#"><span class="fa  fa-facebook-square"></span></a>
+												</div>
+												<div>
+													<a href="#"><span class="fa fa-twitter-square "></span></a>
+													<a href="#"><span class="fa fa-pinterest-square"></span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-11 col-xs-10">
+										<div class="b-blog__posts-one-body">
+											<header class="b-blog__posts-one-body-head">
+												<h2 class="s-titleDet">2015 Chrysler 300: 7 Things You Need to Know</h2>
+												<div class="b-blog__posts-one-body-head-notes">
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-user"></span>Our Admin</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-calendar-o"></span>20th May 2015</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-comment"></span>5 Comments</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-tags"></span>AutoMarket, Tips &amp; Advice</span>
+												</div>
+											</header>
+											<div class="b-blog__posts-one-body-main">
+												<div class="b-blog__posts-one-body-main-link">
+													<a><span class="fa fa-globe"></span>http://themeforest.net/user/Templines</a>
+												</div>
+												<p>Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus nunc. Nunc conseq usemdw veld metus imperdiet lacinia. In viverra dolor non justo. Proin molest erat inder rhoncus posuere de nibh quam  onsectet uer lectus acwl vulputate ligula lorem dolor. Donec nunc. Suspendisse potent. Integer blandit massa sit amet condimentum laoreet, diam elementum urna sed tincidunt lacus sapien pulvinar erat. Mauris vulputate mivitae lobortis. Lorem ipsum dolor sit amet consec etur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+												<a href="article.html" class="btn m-btn m-readMore">READ MORE<span class="fa fa-angle-right"></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="b-blog__posts-one wow zoomInUp" data-wow-delay="0.3s">
+								<div class="row m-noBlockPadding">
+									<div class="col-sm-1 col-xs-2">
+										<div class="b-blog__posts-one-author">
+											<div class="b-blog__posts-one-author-img">
+
+											</div>
+											<div class="b-blog__posts-one-share s-lineDownCenter">SHARE THIS</div>
+											<div class="b-blog__posts-one-social">
+												<div>
+													<a href="#"><span class="fa fa-google-plus-square "></span></a>
+													<a href="#"><span class="fa  fa-facebook-square"></span></a>
+												</div>
+												<div>
+													<a href="#"><span class="fa fa-twitter-square "></span></a>
+													<a href="#"><span class="fa fa-pinterest-square"></span></a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-10 col-sm-11">
+										<div class="b-blog__posts-one-body">
+											<header class="b-blog__posts-one-body-head">
+												<h2 class="s-titleDet">BMW M4 vs Jaguar F-Type Coupe Comparison Test</h2>
+												<div class="b-blog__posts-one-body-head-notes">
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-user"></span>Our Admin</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-calendar-o"></span>20th May 2015</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-comment"></span>5 Comments</span>
+													<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-tags"></span>AutoMarket, Tips &amp; Advice</span>
+												</div>
+											</header>
+											<div class="b-blog__posts-one-body-main">
+												<div class="b-blog__posts-one-body-main-img">
+													<img class="img-responsive" src="media/blog/bmwBlog.jpg" alt="bmw" />
+												</div>
+												<p>Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamus nunc. Nunc conseq usemdw veld metus imperdiet lacinia. In viverra dolor non justo. Proin molest erat inder rhoncus posuere de nibh quam  onsectet uer lectus acwl vulputate ligula lorem dolor. Donec nunc. Suspendisse potent. Integer blandit massa sit amet condimentum laoreet, diam elementum urna sed tincidunt lacus sapien pulvinar erat. Mauris vulputate mivitae lobortis. Lorem ipsum dolor sit amet consec etur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+												<a href="article.html" class="btn m-btn m-readMore">READ MORE<span class="fa fa-angle-right"></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="b-items__pagination-main text-center pull-right wow zoomInUp" data-wow-delay="0.3s">
+								<a href="#" class="m-left"><span class="fa fa-angle-left"></span></a>
+								<span class="m-active"><a href="#">1</a></span>
+								<span><a href="#">2</a></span>
+								<span><a href="#">3</a></span>
+								<span><a href="#">4</a></span>
+								<a href="#" class="m-right"><span class="fa fa-angle-right"></span></a>    
+							</div>
+						</div>
+					</div>
 					<div class="col-md-3 col-xs-12">
 						<aside class="b-blog__aside">
 							<form class="b-blog__aside-search wow zoomInUp" data-wow-delay="0.3s" action="/" method="post">
@@ -180,7 +428,29 @@
 											</div>
 											<div class="col-xs-7">
 												<div class="b-blog__aside-reviews-posts-one-info">
-													<p>Mercedes-Benz GLA - 2015 Hottest Hatch</p>
+													<p>Mercedes-Benz GLA 2015 Hottest Hatch</p>
+													<div class="b-world__item-val">
+														<div class="b-world__item-val-circles">
+															<span></span>
+															<span></span>
+															<span></span>
+															<span></span>
+															<span class="m-empty"></span>
+														</div>
+														<span class="b-world__item-num">4.1</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="b-blog__aside-reviews-posts-one">
+										<div class="row m-smallPadding">
+											<div class="col-xs-5">
+												<img src="media/100x80/mazdaRev.jpg" alt="" class="img-responsive  pull-right" />
+											</div>
+											<div class="col-xs-7">
+												<div class="b-blog__aside-reviews-posts-one-info">
+													<p>First Look: <br />2016 Mazda CX-3</p>
 													<div class="b-world__item-val">
 														<div class="b-world__item-val-circles">
 															<span></span>
@@ -197,256 +467,99 @@
 									</div>
 								</div>
 							</div>
+							<div class="b-blog__aside-archives wow zoomInUp" data-wow-delay="0.3s">
+								<header class="s-lineDownLeft">
+									<h2 class="s-titleDet">ARCHIVES</h2>
+								</header>
+								<nav>
+									<ul class="b-blog__aside-categories-list">
+										<li><a href="#">April 2015</a></li>
+										<li><a href="#">March 2015</a></li>
+										<li class="m-active"><a href="#">February 2015</a></li>
+										<li><a href="#">January 2105</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="b-items__aside-sell wow zoomInUp" data-wow-delay="0.3s">
+								<div class="b-items__aside-sell-img">
+									<h3>SELL YOUR CAR</h3>
+								</div>
+								<div class="b-items__aside-sell-info">
+									<p>
+										Nam tellus enimds eleifend dignis lsim
+										biben edum tristique sed metus fusce
+										Maecenas lobortis.
+									</p>
+									<a href="submit1.html" class="btn m-btn">REGISTER NOW<span class="fa fa-angle-right"></span></a>
+								</div>
+							</div>
+							<div class="b-detail__main-aside-about-call wow zoomInUp" data-wow-delay="0.3s">
+								<span class="fa fa-phone"></span>
+								<div>1-888-378-4027</div>
+								<p>QUESTIONS? CALL US 24/7</p>
+							</div>
 						</aside>
-					</div>
-					<div class="col-md-9 col-xs-12">
-						<div class="b-blog__posts">
-							<div class="b-blog__posts-one wow zoomInUp" data-wow-delay="0.3s">
-								<div class="row">
-									<div class="col-xs-8">
-										<header class="b-blog__posts-one-body-head s-lineDownLeft">              
-											<div class="b-blog__posts-one-body-head-notes">
-												<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-user"></span>Our Admin</span>
-												<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-calendar-o"></span>20th May 2015</span>
-												<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-comment"></span>5 Comments</span>
-											</div>
-											<h2 class="s-titleDet">Redesigned 2016 Nissan Maxima Introduced</h2>
-										</header>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-xs-4 pull-right">
-										<img class="img-responsive center-block" src="media/blog/nissanBlogTwo.jpg" alt="nissan" />
-									</div>
-									<div class="col-xs-8 pull-right">
-										<div class="b-blog__posts-one-info">
-											<p>
-												Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamu sd nunc. Nunc conseq usemdw veld metus imperdiet lacinia. In viverra dolor non justo. Proin molest erat inder rhoncus posuere de nibh quam  onsectet uer lectus acwl vulputate ligulad lorem dolor. Donec nunc. Suspendisse potent. Integer blandit massa sit amet condimentum laoreet diam elementum urna sed tincidunt lacus sapien.
-											</p>
-											<a href="article.html" class="btn m-btn m-readMore">Read More<span class="fa fa-angle-right"></span></a>
-											<div class="b-blog__posts-one-social pull-right">
-												<em>SHARE THIS</em>
-												<a href="#"><span class="fa fa-google-plus-square "></span></a>
-												<a href="#"><span class="fa  fa-facebook-square"></span></a>
-												<a href="#"><span class="fa fa-twitter-square "></span></a>
-												<a href="#"><span class="fa fa-pinterest-square"></span></a>
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-							<div class="b-blog__posts-one wow zoomInUp" data-wow-delay="0.3s">
-								<div class="row">
-									<div class="col-xs-8">
-										<header class="b-blog__posts-one-body-head s-lineDownLeft">              
-											<div class="b-blog__posts-one-body-head-notes">
-												<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-user"></span>Our Admin</span>
-												<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-calendar-o"></span>20th May 2015</span>
-												<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-comment"></span>5 Comments</span>
-											</div>
-											<h2 class="s-titleDet">2015 Ferrari California T</h2>
-										</header>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-xs-4 pull-right">
-										<img class="img-responsive center-block" src="media/blog/ferrariBlogTwo.jpg" alt="ferrari" />
-									</div>
-									<div class="col-xs-8 pull-right">
-										<div class="b-blog__posts-one-info">
-											<p>
-												Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamu sd nunc. Nunc conseq usemdw veld metus imperdiet lacinia. In viverra dolor non justo. Proin molest erat inder rhoncus posuere de nibh quam  onsectet uer lectus acwl vulputate ligulad lorem dolor. Donec nunc. Suspendisse potent. Integer blandit massa sit amet condimentum laoreet diam elementum urna sed tincidunt lacus sapien.
-											</p>
-											<a href="article.html" class="btn m-btn m-readMore">Read More<span class="fa fa-angle-right"></span></a>
-											<div class="b-blog__posts-one-social pull-right">
-												<em>SHARE THIS</em>
-												<a href="#"><span class="fa fa-google-plus-square "></span></a>
-												<a href="#"><span class="fa  fa-facebook-square"></span></a>
-												<a href="#"><span class="fa fa-twitter-square "></span></a>
-												<a href="#"><span class="fa fa-pinterest-square"></span></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="b-blog__posts-one wow zoomInUp" data-wow-delay="0.3s">
-								<div class="row">
-									<div class="col-xs-8">
-										<header class="b-blog__posts-one-body-head s-lineDownLeft">              
-											<div class="b-blog__posts-one-body-head-notes">
-												<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-user"></span>Our Admin</span>
-												<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-calendar-o"></span>20th May 2015</span>
-												<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-comment"></span>5 Comments</span>
-											</div>
-											<h2 class="s-titleDet">2015 Chrysler 300: 7 Things You Need to Know</h2>
-										</header>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-xs-4 pull-right">
-										<img class="img-responsive center-block" src="media/blog/chryslerBlogTwo.jpg" alt="" />
-									</div>
-									<div class="col-xs-8 pull-right">
-										<div class="b-blog__posts-one-info">
-											<p>
-												Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamu sd nunc. Nunc conseq usemdw veld metus imperdiet lacinia. In viverra dolor non justo. Proin molest erat inder rhoncus posuere de nibh quam  onsectet uer lectus acwl vulputate ligulad lorem dolor. Donec nunc. Suspendisse potent. Integer blandit massa sit amet condimentum laoreet diam elementum urna sed tincidunt lacus sapien.
-											</p>
-											<a href="article.html" class="btn m-btn m-readMore">Read More<span class="fa fa-angle-right"></span></a>
-											<div class="b-blog__posts-one-social pull-right">
-												<em>SHARE THIS</em>
-												<a href="#"><span class="fa fa-google-plus-square "></span></a>
-												<a href="#"><span class="fa  fa-facebook-square"></span></a>
-												<a href="#"><span class="fa fa-twitter-square "></span></a>
-												<a href="#"><span class="fa fa-pinterest-square"></span></a>
-											</div>
-										</div>
-									</div>                              
-								</div>
-							</div>
-							<div class="b-blog__posts-one wow zoomInUp" data-wow-delay="0.3s">
-								<div class="row">
-									<div class="col-xs-8">
-										<header class="b-blog__posts-one-body-head s-lineDownLeft">              
-											<div class="b-blog__posts-one-body-head-notes">
-												<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-user"></span>Our Admin</span>
-												<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-calendar-o"></span>20th May 2015</span>
-												<span class="b-blog__posts-one-body-head-notes-note"><span class="fa fa-comment"></span>5 Comments</span>
-											</div>
-											<h2 class="s-titleDet">BMW M4 vs Jaguar F-Type Coupe Comparison</h2>
-										</header>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-xs-4 pull-right">
-										<img class="img-responsive center-block" src="media/blog/bmwBlogTwo.jpg" alt="" />
-									</div>
-									<div class="col-xs-8 pull-right">
-										<div class="b-blog__posts-one-info">
-											<p>
-												Curabitur libero. Donec facilisis velit eu est. Phasellus cons quat. Aenean vitae quam. Vivamu sd nunc. Nunc conseq usemdw veld metus imperdiet lacinia. In viverra dolor non justo. Proin molest erat inder rhoncus posuere de nibh quam  onsectet uer lectus acwl vulputate ligulad lorem dolor. Donec nunc. Suspendisse potent. Integer blandit massa sit amet condimentum laoreet diam elementum urna sed tincidunt lacus sapien.
-											</p>
-											<a href="article.html" class="btn m-btn m-readMore">Read More<span class="fa fa-angle-right"></span></a>
-											<div class="b-blog__posts-one-social pull-right">
-												<em>SHARE THIS</em>
-												<a href="#"><span class="fa fa-google-plus-square "></span></a>
-												<a href="#"><span class="fa  fa-facebook-square"></span></a>
-												<a href="#"><span class="fa fa-twitter-square "></span></a>
-												<a href="#"><span class="fa fa-pinterest-square"></span></a>
-											</div>
-										</div>
-									</div> 
-								</div>
-							</div>
-							<div class="text-center wow zoomInUp" data-wow-delay="0.3s">
-								<div class="b-items__pagination-main text-center">
-									<a href="#" class="m-left"><span class="fa fa-angle-left"></span></a>
-									<span class="m-active"><a href="#">1</a></span>
-									<span><a href="#">2</a></span>
-									<span><a href="#">3</a></span>
-									<span><a href="#">4</a></span>
-									<a href="#" class="m-right"><span class="fa fa-angle-right"></span></a>    
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
-		</div><!--b-blog-->
-
-		
+		</section><!--b-blog-->
 
 		<div class="b-info">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 col-xs-6">
-						<address class="b-info__contacts" data-wow-delay="0.3s">
-							<p>About us</p>
-							<div class="b-info__contacts-item">
-								<p>Vestibulum varius od lio eget conseq
-									uat blandit, lorem auglue comm lodo 
-									nisl non ultricies lectus nibh mas lsa 
-									Duis scelerisque aliquet. Ante donec
-									libero pede porttitor dacu msan esct
-									venenatis quis.</p>
-							</article>
-						</address>
+					<div class="col-md-4 col-xs-6">
+						<aside class="b-info__aside wow zoomInLeft" data-wow-delay="0.3s">
+							<article class="b-info__aside-article">
+                            	<h3><span class="fa fa-instagram"></span><a href="#"> @jualanmotorcom</a></h3>
+                            	<!-- www.intagme.com -->
+<iframe src="http://www.intagme.com/in/?u=cGFtZWxhYW5kZXJzb258aW58MTAwfDR8NHwyMjIyMjJ8bm98MXx1bmRlZmluZWR8bm8=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:350px" ></iframe>								
+							</article>							
+						</aside>
 					</div>
-					<div class="col-md-3 col-xs-6">
-						<div class="b-info__latest">
-							<h3>Facebook</h3>
-							<div class="b-info__latest-article" data-wow-delay="0.3s">
+					<div class="col-md-4 col-xs-6">
+						<div class="b-info__latest wow zoomInUp" data-wow-delay="0.3s">
+							<h3>KNALPOT</h3>
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__latest-article-photo m-audi"></div>
 								<div class="b-info__latest-article-info">
 									<h6><a href="detail.html">MERCEDES-AMG GT S</a></h6>
-									<p><span class="fa fa-user"></span> 35,000 </p>
+									<p style="margin:0px;">12 - 01 - 2016</p>
+                                    <p style="color:#ffffff;margin:0px;line-height:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida convallis lorem ac tincidunt. Nulla laoreet diam quis.</p>
 								</div>
 							</div>
-							<div class="b-info__latest-article" data-wow-delay="0.3s">
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__latest-article-photo m-audiSpyder"></div>
 								<div class="b-info__latest-article-info">
 									<h6><a href="#">AUDI R8 SPYDER V-8</a></h6>
-									<p><span class="fa fa-user"></span> 35,000 </p>
+									<p style="margin:0px;">12 - 01 - 2016</p>
+                                    <p style="color:#ffffff;margin:0px;line-height:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida convallis lorem ac tincidunt. Nulla laoreet diam quis.</p>
 								</div>
 							</div>
-							<div class="b-info__latest-article" data-wow-delay="0.3s">
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__latest-article-photo m-aston"></div>
 								<div class="b-info__latest-article-info">
 									<h6><a href="#">ASTON MARTIN VANTAGE</a></h6>
-									<p><span class="fa fa-user"></span> 35,000 </p>
+									<p style="margin:0px;">12 - 01 - 2016</p>
+                                    <p style="color:#ffffff;margin:0px;line-height:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida convallis lorem ac tincidunt. Nulla laoreet diam quis.</p>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3 col-xs-6">
-						<div class="b-info__twitter">
-							<h3>from twitter</h3>
-							<div class="b-info__twitter-article" data-wow-delay="0.3s">
-								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
-								<div class="b-info__twitter-article-content">
-									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
-									<span>20 minutes ago</span>
-								</div>
-							</div>
-							<div class="b-info__twitter-article" data-wow-delay="0.3s">
-								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
-								<div class="b-info__twitter-article-content">
-									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
-									<span>20 minutes ago</span>
-								</div>
-							</div>
-							<div class="b-info__twitter-article" data-wow-delay="0.3s">
-								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
-								<div class="b-info__twitter-article-content">
-									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
-									<span>20 minutes ago</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6">
-						<address class="b-info__contacts" data-wow-delay="0.3s">
-							<p>contact us</p>
+					</div>					
+					<div class="col-md-4 col-xs-6">
+						<address class="b-info__contacts wow zoomInUp" data-wow-delay="0.3s">
+							<p>Hubungi Kami</p>
 							<div class="b-info__contacts-item">
 								<span class="fa fa-map-marker"></span>
-								<em>202 W 7th St, Suite 233 Los Angeles,
-									California 90014 USA</em>
+								<em>Jln Pejaten raya no. 33D. Pasar Minggu. Jakarta Selatan</em>
 							</div>
 							<div class="b-info__contacts-item">
 								<span class="fa fa-phone"></span>
-								<em>Phone:  1-800- 624-5462</em>
-							</div>
-							<div class="b-info__contacts-item">
-								<span class="fa fa-fax"></span>
-								<em>FAX:  1-800- 624-5462</em>
+								<em>Phone:  +6221 - 78838123</em>
 							</div>
 							<div class="b-info__contacts-item">
 								<span class="fa fa-envelope"></span>
-								<em>Email:  info@domain.com</em>
+								<em>Email:  info@jualanmotor.com</em>
 							</div>
-						</address>
-						<address class="b-info__map">
-							<a href="contacts.html">Open Location Map</a>
 						</address>
 					</div>
 				</div>
@@ -458,17 +571,30 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-4">
-						<div class="b-footer__company" data-wow-delay="0.3s">
-							<img width="210" height="59" src="images/logo/logoF.png" alt="logo" />	
-							<p>&copy; 2015 Designed by jualanmotor</p>
+						<div class="b-footer__company wow fadeInLeft" data-wow-delay="0.3s">
+							<div class="b-nav__logo" style="height:70px !important;"></div>
+							<p>&copy; 2016 jualanmotor.com</p>
 						</div>
 					</div>
 					<div class="col-xs-8">
-						<div class="b-footer__content" data-wow-delay="0.3s">
+						<div class="b-footer__content wow fadeInRight" data-wow-delay="0.3s">
 							<div class="b-footer__content-social">
 								<a href="#"><span class="fa fa-facebook-square"></span></a>
 								<a href="#"><span class="fa fa-twitter-square"></span></a>
+								<a href="#"><span class="fa fa-instagram"></span></a>
+								<a href="#"><span class="fa fa-youtube-square"></span></a>
 							</div>
+							<nav class="b-footer__content-nav">
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Iklan Terbaru</a></li>
+									<li><a href="#">Motor Bekas</a></li>
+									<li><a href="#">Motor Baru</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</nav>
 						</div>
 					</div>
 				</div>
