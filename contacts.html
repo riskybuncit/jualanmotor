@@ -25,18 +25,73 @@
 
 	</head>
 	<body class="m-contacts" data-scrolling-animations="true" >
-		<header class="b-topBar" data-wow-delay="0.7s">
+	<section class="b-modal">        	
+			<div id="modal1" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">SIGN IN</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="btn-group-justified">
+                               <a class="btn btn-social btn-facebook btn-group" style="border-radius:0;">
+                                  <i class="fa fa-facebook"></i> Sign in with Facebook
+                                </a>
+                                <a class="btn btn-social btn-twitter btn-group" style="border-radius:0;">
+                                  <i class="fa fa-twitter"></i> Sign in with Twitter
+                                </a>
+                            </p>
+                            <br>
+                            <p class="legend">
+                                <span>Atau</span>
+                            </p>
+                            <form id="contactForm" novalidate class="s-form wow zoomInUp" data-wow-delay="0.5s">
+                                <input type="text" placeholder="Alamat Email" value="" name="user-name" id="" />
+                                <input type="password" placeholder="Password" value="" name="user-email" id="" />           
+                                    <div class="b-search__main-form-submit">
+                                    	<button id="close1_open2" type="button" class="small" style="background-color:transparent !important; border:none !important;margin-top:8px;color:#337AB7; text-transform:capitalize;">Lupa Password?</button>
+                                        <button type="submit" class="btn m-btn" style="margin-top:0px !important;">SIGN IN<span class="fa fa-angle-right"></span></button>                                        
+                                    </div>  
+                            </form>                            
+                        </div>
+                        <div class="modal-footer small">
+                            Belum punya akun? <a href="#">Daftar</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div id="modal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Lupa Password?</h4>
+                        </div>
+                        <div class="modal-body">                        	
+                            <form id="contactForm" novalidate class="s-form wow zoomInUp" data-wow-delay="0.5s">
+                                <p class="small">Masukkan alamat email Anda dan kami akan mengirimkan detil informasi untuk mereset password Anda.</p>
+                                <input type="text" placeholder="Alamat Email" value="" name="user-name" id="" />
+                                <div class="b-search__main-form-submit">
+                                    <button type="submit" class="btn m-btn" style="margin-top:0px !important;">SUBMIT<span class="fa fa-angle-right"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div><!--b-modal-->
+		</section><!--b-modal-->
+		<header class="b-topBar wow slideInDown" data-wow-delay="0.7s">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12 col-xs-18">
+				<div class="row">					
+					<div class="col-md-4 col-xs-6 pull-right">
 						<nav class="b-topBar__nav">
 							<ul>
-								<li><a href="register.html">Register</a></li>
-								<li><a href="#">Sign in</a></li>
-								<li><a href="#">Pasang Iklan</a></li>
+								<li><a href="#">Register</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#modal1" href="#">Sign in</a></li>
 							</ul>
 						</nav>
-					</div>
+					</div>					
 				</div>
 			</div>
 		</header><!--b-topBar-->
@@ -45,12 +100,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-3 col-xs-4">
-						<div class="b-nav__logo" data-wow-delay="0.3s">
-						<img src="images/logo/logo.png" alt="logo" />	
-						</div>
+						<div class="b-nav__logo wow slideInLeft" data-wow-delay="0.3s"></div>
 					</div>
 					<div class="col-sm-9 col-xs-8">
-						<div class="b-nav__list" data-wow-delay="0.3s">
+						<div class="b-nav__list wow slideInRight" data-wow-delay="0.3s">
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
 									<span class="sr-only">Toggle navigation</span>
@@ -61,13 +114,13 @@
 							</div>
 							<div class="collapse navbar-collapse navbar-main-slide" id="nav">
 								<ul class="navbar-nav-menu">
-									<li><a href="home.html">HOME</a></li>
+                                	<li class="active"><a href="home.html">HOME</a></li>
 									<li><a href="iklanterbaru.html">IKLAN TERBARU</a></li>
 									<li><a href="motor-bekas.html">MOTOR BEKAS</a></li>
 									<li><a href="motor-baru.html">MOTOR BARU</a></li>
-									<li><a href="blogTwo.html">BLOG</a></li>
+									<li><a href="blog.html">BLOG</a></li>
 									<li><a href="news.html">NEWS</a></li>
-									<li class="active"><a href="contacts.html">Contact</a></li>
+									<li><a href="contacts.html">Contact</a></li>
 								</ul>
 							</div>
 						</div>
@@ -79,9 +132,6 @@
 		<section class="b-pageHeader">
 			<div class="container">
 				<h1 class=" wow zoomInLeft" data-wow-delay="0.5s">Contact Us</h1>
-				<div class="b-pageHeader__search wow zoomInRight" data-wow-delay="0.5s">
-					<h3>Get In Touch With Us Now</h3>
-				</div>
 			</div>
 		</section><!--b-pageHeader-->
 
@@ -190,99 +240,64 @@
 			</div>
 		</section><!--b-contacts-->
 
-		
+		<div class="b-features" style="background-color:#ffffff !important;">&nbsp;</div><!--b-features-->
 
 		<div class="b-info">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 col-xs-6">
-						<address class="b-info__contacts" data-wow-delay="0.3s">
-							<p>About us</p>
-							<div class="b-info__contacts-item">
-								<p>Vestibulum varius od lio eget conseq
-									uat blandit, lorem auglue comm lodo 
-									nisl non ultricies lectus nibh mas lsa 
-									Duis scelerisque aliquet. Ante donec
-									libero pede porttitor dacu msan esct
-									venenatis quis.</p>
-							</article>
-						</address>
+					<div class="col-md-4 col-xs-6">
+						<aside class="b-info__aside wow zoomInLeft" data-wow-delay="0.3s">
+							<article class="b-info__aside-article">
+                            	<h3><span class="fa fa-instagram"></span><a href="#"> @jualanmotorcom</a></h3>
+                            	<!-- www.intagme.com -->
+<iframe src="http://www.intagme.com/in/?u=cGFtZWxhYW5kZXJzb258aW58MTAwfDR8NHwyMjIyMjJ8bm98MXx1bmRlZmluZWR8bm8=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:350px" ></iframe>								
+							</article>							
+						</aside>
 					</div>
-					<div class="col-md-3 col-xs-6">
-						<div class="b-info__latest">
-							<h3>Facebook</h3>
-							<div class="b-info__latest-article" data-wow-delay="0.3s">
+					<div class="col-md-4 col-xs-6">
+						<div class="b-info__latest wow zoomInUp" data-wow-delay="0.3s">
+							<h3>KNALPOT</h3>
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__latest-article-photo m-audi"></div>
 								<div class="b-info__latest-article-info">
 									<h6><a href="detail.html">MERCEDES-AMG GT S</a></h6>
-									<p><span class="fa fa-user"></span> 35,000 </p>
+									<p style="margin:0px;">12 - 01 - 2016</p>
+                                    <p style="color:#ffffff;margin:0px;line-height:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida convallis lorem ac tincidunt. Nulla laoreet diam quis.</p>
 								</div>
 							</div>
-							<div class="b-info__latest-article" data-wow-delay="0.3s">
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__latest-article-photo m-audiSpyder"></div>
 								<div class="b-info__latest-article-info">
 									<h6><a href="#">AUDI R8 SPYDER V-8</a></h6>
-									<p><span class="fa fa-user"></span> 35,000 </p>
+									<p style="margin:0px;">12 - 01 - 2016</p>
+                                    <p style="color:#ffffff;margin:0px;line-height:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida convallis lorem ac tincidunt. Nulla laoreet diam quis.</p>
 								</div>
 							</div>
-							<div class="b-info__latest-article" data-wow-delay="0.3s">
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
 								<div class="b-info__latest-article-photo m-aston"></div>
 								<div class="b-info__latest-article-info">
 									<h6><a href="#">ASTON MARTIN VANTAGE</a></h6>
-									<p><span class="fa fa-user"></span> 35,000 </p>
+									<p style="margin:0px;">12 - 01 - 2016</p>
+                                    <p style="color:#ffffff;margin:0px;line-height:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida convallis lorem ac tincidunt. Nulla laoreet diam quis.</p>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3 col-xs-6">
-						<div class="b-info__twitter">
-							<h3>from twitter</h3>
-							<div class="b-info__twitter-article" data-wow-delay="0.3s">
-								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
-								<div class="b-info__twitter-article-content">
-									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
-									<span>20 minutes ago</span>
-								</div>
-							</div>
-							<div class="b-info__twitter-article" data-wow-delay="0.3s">
-								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
-								<div class="b-info__twitter-article-content">
-									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
-									<span>20 minutes ago</span>
-								</div>
-							</div>
-							<div class="b-info__twitter-article" data-wow-delay="0.3s">
-								<div class="b-info__twitter-article-icon"><span class="fa fa-twitter"></span></div>
-								<div class="b-info__twitter-article-content">
-									<p>Duis scelerisque aliquet ante donec libero pede porttitor dacu</p>
-									<span>20 minutes ago</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6">
-						<address class="b-info__contacts" data-wow-delay="0.3s">
-							<p>contact us</p>
+					</div>					
+					<div class="col-md-4 col-xs-6">
+						<address class="b-info__contacts wow zoomInUp" data-wow-delay="0.3s">
+							<p>Hubungi Kami</p>
 							<div class="b-info__contacts-item">
 								<span class="fa fa-map-marker"></span>
-								<em>202 W 7th St, Suite 233 Los Angeles,
-									California 90014 USA</em>
+								<em>Jln Pejaten raya no. 33D. Pasar Minggu. Jakarta Selatan</em>
 							</div>
 							<div class="b-info__contacts-item">
 								<span class="fa fa-phone"></span>
-								<em>Phone:  1-800- 624-5462</em>
-							</div>
-							<div class="b-info__contacts-item">
-								<span class="fa fa-fax"></span>
-								<em>FAX:  1-800- 624-5462</em>
+								<em>Phone:  +6221 - 78838123</em>
 							</div>
 							<div class="b-info__contacts-item">
 								<span class="fa fa-envelope"></span>
-								<em>Email:  info@domain.com</em>
+								<em>Email:  info@jualanmotor.com</em>
 							</div>
-						</address>
-						<address class="b-info__map">
-							<a href="contacts.html">Open Location Map</a>
 						</address>
 					</div>
 				</div>
@@ -294,23 +309,36 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-4">
-						<div class="b-footer__company" data-wow-delay="0.3s">
-							<img width="210" height="59" src="images/logo/logoF.png" alt="logo" />	
-							<p>&copy; 2015 Designed by jualanmotor</p>
+						<div class="b-footer__company wow fadeInLeft" data-wow-delay="0.3s">
+							<div class="b-nav__logo" style="height:70px !important;"></div>
+							<p>&copy; 2016 jualanmotor.com</p>
 						</div>
 					</div>
 					<div class="col-xs-8">
-						<div class="b-footer__content" data-wow-delay="0.3s">
+						<div class="b-footer__content wow fadeInRight" data-wow-delay="0.3s">
 							<div class="b-footer__content-social">
 								<a href="#"><span class="fa fa-facebook-square"></span></a>
 								<a href="#"><span class="fa fa-twitter-square"></span></a>
+								<a href="#"><span class="fa fa-instagram"></span></a>
+								<a href="#"><span class="fa fa-youtube-square"></span></a>
 							</div>
+							<nav class="b-footer__content-nav">
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Iklan Terbaru</a></li>
+									<li><a href="#">Motor Bekas</a></li>
+									<li><a href="#">Motor Baru</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</nav>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer><!--b-footer-->
-		<!--Main-->   
+		<!--Main-->           
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/jquery-ui.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -329,13 +357,17 @@
 		<script src="assets/bxslider/jquery.bxslider.js"></script>
 		<!-- jQuery UI Slider -->
 		<script src="assets/slider/jquery.ui-slider.js"></script>
-		<!--Contact form--> 
-		<script src="assets/contact/jqBootstrapValidation.js"></script> 
-		<script src="assets/contact/contact_me.js"></script>
+
 		<!--Theme-->
 		<script src="js/jquery.smooth-scroll.js"></script>
 		<script src="js/wow.min.js"></script>
 		<script src="js/jquery.placeholder.min.js"></script>
 		<script src="js/theme.js"></script>
+        <script>
+		$("#close1_open2").click(function() {
+			$("#modal1").modal('hide');
+			$("#modal2").modal('show');
+		});
+		</script>
 	</body>
 </html>
