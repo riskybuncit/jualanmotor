@@ -87,10 +87,12 @@
     margin-bottom: 13px;
     border-bottom: 1px solid #eeeeee;
     cursor:pointer;
+
 }
 
 .b-blog__aside-categories-list li:hover a,.b-blog__aside-categories-list li.m-active a{
     font-weight:700;
+
 }
 
 .b-blog__aside-categories-list li a{
@@ -102,6 +104,8 @@
 
 .b-blog__aside-categories-list li a:hover,.b-blog__aside-categories-list li a:visited,.b-blog__aside-categories-list li a:active,.b-blog__aside-categories-list li a:focus{
     text-decoration: none;
+
+
 }
 
 .b-blog__aside-popular{
