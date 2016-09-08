@@ -2,3 +2,8 @@
 /* CUSTOM CSS (ADD YOUR CSS HERE!) */
 /*//////////////////////////////////////////////////////////////////////////////////////////*/
 
+/* CUSTOM CSS (KOPRAL WAS HERE) */
+.b-compare__block-inside-cs{
+    margin-top: 35px;
+    display: block;
+}
