@@ -25,6 +25,62 @@
 
 	</head>
 	<body class="m-compare" data-scrolling-animations="true">
+		<section class="b-modal">        	
+			<div id="modal1" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">SIGN IN</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="btn-group-justified">
+                               <a class="btn btn-social btn-facebook btn-group" style="border-radius:0;">
+                                  <i class="fa fa-facebook"></i> Sign in with Facebook
+                                </a>
+                                <a class="btn btn-social btn-twitter btn-group" style="border-radius:0;">
+                                  <i class="fa fa-twitter"></i> Sign in with Twitter
+                                </a>
+                            </p>
+                            <br>
+                            <p class="legend">
+                                <span>Atau</span>
+                            </p>
+                            <form id="contactForm" novalidate class="s-form" data-wow-delay="">
+                                <input type="text" placeholder="Alamat Email" value="" name="user-name" id="" />
+                                <input type="password" placeholder="Password" value="" name="user-email" id="" />           
+                                    <div class="b-search__main-form-submit">
+                                    	<button id="close1_open2" type="button" class="small" style="background-color:transparent !important; border:none !important;margin-top:8px;color:#337AB7; text-transform:capitalize;">Lupa Password?</button>
+                                        <button type="submit" class="btn m-btn" style="margin-top:0px !important;">SIGN IN<span class="fa fa-angle-right"></span></button>                                        
+                                    </div>  
+                            </form>                            
+                        </div>
+                        <div class="modal-footer small">
+                            Belum punya akun? <a href="#">Daftar</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div id="modal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Lupa Password?</h4>
+                        </div>
+                        <div class="modal-body">                        	
+                            <form id="contactForm" novalidate class="s-form" data-wow-delay="">
+                                <p class="small">Masukkan alamat email Anda dan kami akan mengirimkan detil informasi untuk mereset password Anda.</p>
+                                <input type="text" placeholder="Alamat Email" value="" name="user-name" id="" />
+                                <div class="b-search__main-form-submit">
+                                    <button type="submit" class="btn m-btn" style="margin-top:0px !important;">SUBMIT<span class="fa fa-angle-right"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div><!--b-modal-->
+		</section><!--b-modal-->	
 
 		<header class="b-topBar wow slideInDown" data-wow-delay="0.7s">
 			<div class="container">
@@ -32,9 +88,9 @@
 					<div class="col-md-12 col-xs-18">
 						<nav class="b-topBar__nav">
 							<ul>
-								<li><a href="#">Register</a></li>
-								<li><a href="#">Sign in</a></li>
-								<li><a href="#">Pasang Iklan</a></li>
+								<li><a href="register.html">Register</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#modal1" href="#">Sign in</a></li>
+								<li><a href="pasang-iklan.html">Pasang Iklan</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -101,7 +157,7 @@
 									<h4 align="center">Upload Your Photo</h4>
 									<img class="img-responsive center-block" src="media/270x180/lexusComp.jpg" alt="lexus" />
 									<div class="b-compare__links wow">
-										<a href="detail.html" class="btn m-btn">Choose File<span class="fa fa-angle-right"></span></a>
+										<a class="btn m-btn m-infoBtn">Choose File<span class="fa fa-angle-right"></span></a>
 									</div>
 								</div>
 							</div>
@@ -252,13 +308,13 @@
 					<div class="b-compare__links wow zoomInUp" data-wow-delay="0.3s">
 						<div class="row">
 							<div class="col-sm-3 col-xs-12 col-sm-offset-3">
-								<a href="detail.html" class="btn m-btn">RESET<span class="fa fa-angle-right"></span></a>
+								<a href="detail.html" class="btn m-btn m-infoBtn">RESET<span class="fa fa-angle-right"></span></a>
 							</div>
 							<div  class="col-sm-3 col-xs-12">
-								<a href="detail.html" class="btn m-btn">REGISTER<span class="fa fa-angle-right"></span></a>        
+								<a href="detail.html" class="btn m-btn m-infoBtn">REGISTER<span class="fa fa-angle-right"></span></a>        
 							</div>
 							<div class="col-sm-3 col-xs-12">
-								<a href="detail.html" class="btn m-btn">CANCEL<span class="fa fa-angle-right"></span></a>      
+								<a href="detail.html" class="btn m-btn m-infoBtn">CANCEL<span class="fa fa-angle-right"></span></a>      
 							</div>
 						</div>
 					</div>
@@ -395,5 +451,11 @@
 		<script src="js/wow.min.js"></script>
 		<script src="js/jquery.placeholder.min.js"></script>
 		<script src="js/theme.js"></script>
+		<script>
+		$("#close1_open2").click(function() {
+			$("#modal1").modal('hide');
+			$("#modal2").modal('show');
+		});
+		</script>
 	</body>
 </html>
