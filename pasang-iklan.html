@@ -16,6 +16,62 @@
 
 	</head>
 	<body class="m-compare"  data-scrolling-animations="true" data-equal-height=".b-auto__main-item">
+		<section class="b-modal">        	
+			<div id="modal1" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">SIGN IN</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="btn-group-justified">
+                               <a class="btn btn-social btn-facebook btn-group" style="border-radius:0;">
+                                  <i class="fa fa-facebook"></i> Sign in with Facebook
+                                </a>
+                                <a class="btn btn-social btn-twitter btn-group" style="border-radius:0;">
+                                  <i class="fa fa-twitter"></i> Sign in with Twitter
+                                </a>
+                            </p>
+                            <br>
+                            <p class="legend">
+                                <span>Atau</span>
+                            </p>
+                            <form id="contactForm" novalidate class="s-form" data-wow-delay="">
+                                <input type="text" placeholder="Alamat Email" value="" name="user-name" id="" />
+                                <input type="password" placeholder="Password" value="" name="user-email" id="" />           
+                                    <div class="b-search__main-form-submit">
+                                    	<button id="close1_open2" type="button" class="small" style="background-color:transparent !important; border:none !important;margin-top:8px;color:#337AB7; text-transform:capitalize;">Lupa Password?</button>
+                                        <button type="submit" class="btn m-btn" style="margin-top:0px !important;">SIGN IN<span class="fa fa-angle-right"></span></button>                                        
+                                    </div>  
+                            </form>                            
+                        </div>
+                        <div class="modal-footer small">
+                            Belum punya akun? <a href="#">Daftar</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div id="modal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Lupa Password?</h4>
+                        </div>
+                        <div class="modal-body">                        	
+                            <form id="contactForm" novalidate class="s-form" data-wow-delay="">
+                                <p class="small">Masukkan alamat email Anda dan kami akan mengirimkan detil informasi untuk mereset password Anda.</p>
+                                <input type="text" placeholder="Alamat Email" value="" name="user-name" id="" />
+                                <div class="b-search__main-form-submit">
+                                    <button type="submit" class="btn m-btn" style="margin-top:0px !important;">SUBMIT<span class="fa fa-angle-right"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div><!--b-modal-->
+		</section><!--b-modal-->
 
 		<header class="b-topBar b-topBar__nav" data-wow-delay="0.7s">
 			<div class="container">
@@ -23,8 +79,9 @@
 					<div class="col-md-12 col-xs-18">
 						<nav class="b-topBar__nav">
 							<ul>
-								<li><a style="color:#ffffff;" href="register.html">Register</a></li>
-								<li><a style="color:#ffffff;" href="#">Sign in</a></li>
+								<li><a href="register.html">Register</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#modal1" >Sign in</a></li>
+								<li><a href="pasang-iklan.html">Pasang Iklan</a>
 							</ul>
 						</nav>
 					</div>
@@ -135,9 +192,8 @@
 				<div class="b-compare__block wow zoomInUp" data-wow-delay="0.3s">
 					<div class="b-compare__block-title s-whiteShadow">
 						<h3 class="s-titleDet">BASIC INFO</h3>
-						<a class="j-more" style="display:block" href="#"><span class="fa fa-angle-left"></span></a>
 					</div>
-					<div class="b-compare__block-inside j-inside">
+					<div class="b-compare__block-inside-cs">
 						<div class="row">
 							<form class="s-submit clearfix" action="submit2.html" method="POST">
 								<div class="row">
@@ -327,5 +383,11 @@
 		<script src="js/wow.min.js"></script>
 		<script src="js/jquery.placeholder.min.js"></script>
 		<script src="js/theme.js"></script>
+		<script>
+		$("#close1_open2").click(function() {
+			$("#modal1").modal('hide');
+			$("#modal2").modal('show');
+		});
+		</script>
 	</body>
 </html>
