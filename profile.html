@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Jualanmotor</title>
+
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpg" />
+
+		<link href="css/master.css" rel="stylesheet">
+
+		
+
+		<!--[if lt IE 9]>
+		<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	</head>
+	<body class="m-compare" data-scrolling-animations="true">
+		<section class="b-modal">        	
+			<div id="modal1" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">SIGN IN</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p class="btn-group-justified">
+                               <a class="btn btn-social btn-facebook btn-group" style="border-radius:0;">
+                                  <i class="fa fa-facebook"></i> Sign in with Facebook
+                                </a>
+                                <a class="btn btn-social btn-twitter btn-group" style="border-radius:0;">
+                                  <i class="fa fa-twitter"></i> Sign in with Twitter
+                                </a>
+                            </p>
+                            <br>
+                            <p class="legend">
+                                <span>Atau</span>
+                            </p>
+                            <form id="contactForm" novalidate class="s-form" data-wow-delay="">
+                                <input type="text" placeholder="Alamat Email" value="" name="user-name" id="" />
+                                <input type="password" placeholder="Password" value="" name="user-email" id="" />           
+                                    <div class="b-search__main-form-submit">
+                                    	<button id="close1_open2" type="button" class="small" style="background-color:transparent !important; border:none !important;margin-top:8px;color:#337AB7; text-transform:capitalize;">Lupa Password?</button>
+                                        <button type="submit" class="btn m-btn" style="margin-top:0px !important;">SIGN IN<span class="fa fa-angle-right"></span></button>                                        
+                                    </div>  
+                            </form>                            
+                        </div>
+                        <div class="modal-footer small">
+                            Belum punya akun? <a href="#">Daftar</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div id="modal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Lupa Password?</h4>
+                        </div>
+                        <div class="modal-body">                        	
+                            <form id="contactForm" novalidate class="s-form" data-wow-delay="">
+                                <p class="small">Masukkan alamat email Anda dan kami akan mengirimkan detil informasi untuk mereset password Anda.</p>
+                                <input type="text" placeholder="Alamat Email" value="" name="user-name" id="" />
+                                <div class="b-search__main-form-submit">
+                                    <button type="submit" class="btn m-btn" style="margin-top:0px !important;">SUBMIT<span class="fa fa-angle-right"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div><!--b-modal-->
+		</section><!--b-modal-->	
+
+		<header class="b-topBar wow slideInDown" data-wow-delay="0.7s">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-xs-18">
+						<nav class="b-topBar__nav">
+							<ul>
+								<li><a href="#">Logout</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#modal1" href="#">Profile</a></li>
+								<li><a href="pasang-iklan.html">Pasang Iklan</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header><!--b-topBar-->
+
+		<nav class="b-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-xs-4">
+						<div class="b-nav__logo" data-wow-delay="0.3s">
+						</div>
+					</div>
+					<div class="col-sm-9 col-xs-8">
+						<div class="b-nav__list" data-wow-delay="0.3s">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="collapse navbar-collapse navbar-main-slide" id="nav">
+								<ul class="navbar-nav-menu">
+									<li><a href="home.html">HOME</a></li>
+									<li><a href="iklanterbaru.html">IKLAN TERBARU</a></li>
+									<li><a href="motor-bekas.html">MOTOR BEKAS</a></li>
+									<li><a href="motor-baru.html">MOTOR BARU</a></li>
+									<li><a href="blogTwo.html">BLOG</a></li>
+									<li><a href="news.html">NEWS</a></li>
+									<li><a href="contacts.html">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav><!--b-nav-->
+
+		<section class="b-pageHeader">
+			<div class="container">
+				<a href="#"><img src="images/elements/banner-JM1.png" width="400" height="92"></a>
+				<div class="b-pageHeader__search wow zoomInRight" data-wow-delay="0.3s">
+					<a href="#"><img src="images/elements/banner-goog1.png" width="100%"></a>
+				</div>
+			</div>
+		</section><!--b-pageHeader-->
+
+		<div class="b-breadCumbs s-shadow">
+			<div class="container wow zoomInUp" data-wow-delay="0.3s">
+				<a href="home.html" class="b-breadCumbs__page">Home</a><span class="fa fa-angle-right"></span><a href="profile.html" class="b-breadCumbs__page m-active">Profile</a>
+			</div>
+		</div><!--b-breadCumbs-->
+
+		<section class="b-compare s-shadow">
+			<div class="container">
+				<form>
+					<div class="b-compare__images">
+						<div class="row">
+							<div class="col-md-12 col-sm-4 col-xs-12">
+								<div class="b-compare__images-item wow zoomInUp" data-wow-delay="0.3s">
+									<h4 align="center">Upload Your Photo</h4>
+									<img class="img-responsive center-block" src="media/270x180/lexusComp.jpg" alt="lexus" />
+									<div class="b-compare__links wow">
+										<a class="btn m-btn m-infoBtn">Choose File<span class="fa fa-angle-right"></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="b-compare__block wow zoomInUp" data-wow-delay="0.3s">
+						<div class="b-compare__block-title s-whiteShadow">
+							<h3 class="s-titleDet">BASIC INFO</h3>
+							<a class="j-more" href="#"><span class="fa fa-angle-left"></span></a>
+						</div>
+						<div class="b-compare__block-inside j-inside ">
+							<div class="row">
+							<div class="row col-xs-10 col-sm-offset-2">
+								<div class="form-group">
+									<label class="col-sm-2" style="color:black;font-size:15px;">Name</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" placeholder="Name">
+									</div>
+								</div>
+							</div>
+							<div class="row col-xs-10 col-sm-offset-2">
+								<div class="form-group">
+									<label for="inputEmail3" class="col-sm-2" style="color:black;font-size:15px;">Email</label>
+									<div class="col-sm-8">
+										<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+									</div>
+								</div>
+							</div>
+							<div class="row col-xs-10 col-sm-offset-2">
+								<div class="form-group">
+									<label class="col-sm-2" style="color:black;font-size:15px;">Address</label>
+										<div class="col-sm-8">
+											<textarea class="form-control" rows="4" placeholder="Address"></textarea>
+										</div>
+								</div>
+							</div>
+							<div class="row col-xs-10 col-sm-offset-2">
+								<div class="form-group">
+									<label class="col-sm-2" style="color:black;font-size:15px;">Gender</label>
+									<div class="col-sm-8">
+										<div class="checkbox">
+											<label>
+										    	<input type="checkbox" value="">
+										    	Laki-Laki
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+											    <input type="checkbox" value="">
+											    Perempuan
+												</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row col-xs-10 col-sm-offset-2">
+								<div class="form-group">
+									<label class="col-sm-2" style="color:black;font-size:15px;">Vehicle Condition</label>
+									<div class="col-sm-8">
+										<select class="form-control">
+										<option>New</option>
+										<option>Second</option>
+										<option>Credit Pass</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row col-xs-10 col-sm-offset-2">
+								<div class="form-group" id="tryDate">
+									<label class="col-sm-2" style="color:black;font-size:15px;">Born Day</label>
+									<div class="col-sm-8">
+											<input type="text" class="form-control" placeholder="Born Day">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+
+					<div class="b-detail__main-info-text wow zoomInUp">
+									<div class="b-detail__main-aside-about-form-links">
+										<a href="#" class="j-tab m-active s-lineDownCenter" data-to='#info1'>PENJELASAN TAMBAHAN</a>
+										<a href="#" class="j-tab" data-to='#info2'>KOMENTAR</a>
+									</div>
+									<div id="info1">
+										<p>The 2016 Nissan Maxima is powered by a 3.5-liter V6 engine with 300 horsepower, 10 more than the engine in the outgoing
+											model. A continuously variable transmission and front-wheel drive are standard in all models. Nissan expects the 2016 Maxima
+											to return 22/30 mpg city/highway, which is an improvement over the previous model's EPA-estimated 19/26 mpg.</p>
+										<p>
+											The 2016 Nissan Maxima seats five and comes with a power-adjustable driver,seat, an eight-speaker audio system, Bluetooth,
+											satellite radio, HD Radio, push-button start, a rearview camera, two USB ports, the NissanConnect infotainment system,
+											navigation, an 8-inch color display screen and voice controls for phone, audio and navigation functions. Leather upholstery,
+											heated and ventilated front seats, an 11-speaker Bose audio system, a 360-degree parking camera system, adaptive cruise
+											control, blind spot warning, rear cross traffic alert, front and rear parking sensors and forward collision warning with automatic
+											braking are available. The 2016 Nissan Maxima starts at $33,235 including destination fees.</p>
+										<p>The full review of the 2016 Nissan Maxima is coming soon. In the meantime, you can see pictures, research prices or view and
+											compare specs for the 2016 Nissan Maxima. If you, considering the 2014 Nissan Maxima, you can read our review.</p>
+										<p>Vestibulum auctor lacinia nunc. Nunc ut turpis.Sed libero magna, fermentum viverra, egestas non, fermentum sed, elit. Aenean
+											erat orci, mollis quis gravida sed, mollis a, quam. Integer fermentum neque egestas orci. Nunc posuere, felis sit amet faucibus
+											convallis tortor enim viverra quam, hendrerit interdum dui quam ut lacus. Donec quis quam in ante condimentum blan erdit.
+											Integer et urna. Vestibulum nisl. Ut ante est, imperdiet dignissim eleifend sit amet lacinia tempor justo. Nunc ornare atm nibh.
+											Fusce ut felis. </p>
+										<p>Donec ullamcorper nisi ac lectus. Proin at orci. Suspendisse nec orci nec elit convallis porttitor. Praesent sit amet turpis eu nisl
+											faucibus pharetra. Sed eu felis. Etiam eleifend nisl nec lectus. Ut suscipit pede eu diam. Aenean vitae quam. Cras felis. Sed utdw
+											nibh. Duis libero. Vivamus pharetra libero non facilisis imperdiet mi augue feugiat nisl.</p>
+									</div>
+									<div id="info2">
+							<!--h3>Start Commend</h3-->
+							<div class="b-article__main-comments">
+								<div class="clearfix"></div>
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="b-article__main-comments-one wow zoomInUp">
+											<div class="b-article__main-comments-one-person">
+												<div class="b-blog__posts-one-author-img"></div>
+											</div>
+											<div class="b-article__main-comments-one-text">
+												<header class="b-article__main-comments-one-text-head">
+													<h6>William Shane</h6>
+													<div class="b-article__main-comments-one-text-head-date">
+														<span>30 MAY 2015</span>
+														<span>Posted at 12:25 AM</span>
+													</div>
+													<a class="b-article__main-comments-one-text-head-answer  pull-right" href="#"><span class="fa fa-long-arrow-left"></span></a>
+												</header>
+												<p>
+													In eget dolor. Lorem ipsum dolor sit amet consectetuer adipiscing elit. Ut ornare cursus nibh. Sed lorem volutpat purus scel erisque dapibus. Etiam adipiscing ante nec nibh. In in felis in metus mollis blandit.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12">
+										<div class="b-article__main-comments-one m-second wow zoomInUp">
+											<div class="b-article__main-comments-one-person">
+												<div class="b-blog__posts-one-author-img m-woomen"></div>
+											</div>
+											<div class="b-article__main-comments-one-text">
+												<header class="b-article__main-comments-one-text-head">
+													<h6>Martina Kathrine</h6>
+													<div class="b-article__main-comments-one-text-head-date">
+														<span>30 MAY 2015</span>
+														<span>Posted at 12:25 AM</span>
+													</div>
+													<a class="b-article__main-comments-one-text-head-answer  pull-right" href="#"><span class="fa fa-long-arrow-left"></span></a>
+												</header>
+												<p>
+													In eget dolor. Lorem ipsum dolor sit amet consectetuer adipiscing elit. Ut ornare cursus nibh. Sed lorem volutpat purus scel erisque dapibus. Etiam adipiscing ante nec nibh. In in felis in metus mollis blandit.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="b-article__main-add wow zoomInUp">
+								<div class="s-lineDownLeft  s-titleLeft">
+									<div>
+										<h2 class="s-titleDet">Tulis Komentar</h2>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<form action="/" method="POST">
+									<div class="row">
+										<div class="col-xs-4">
+											<input placeholder="YOUR NAME" type="text" name="name" />
+										</div>
+										<div class="col-xs-4">
+											<input placeholder="EMAIL ADDRESS" type="text" name="email" />
+										</div>
+										<div class="col-xs-4">
+											<input placeholder="WEBSITE" type="text" name="website" />
+										</div>
+									</div>
+									<textarea name="text" placeholder="MESSAGE"></textarea>
+									<button type="submit" class="btn m-btn">SEND COMMENT<span class="fa fa-angle-right"></span></button>
+								</form>
+							</div>
+							<!--h3>End Commend</h3-->
+									</div>									
+								</div>	
+					
+
+
+					<!--
+					<div class="b-compare__links wow" data-wow-delay="0.3s">
+						<div class="col-sm-3 col-xs-12 col-sm-offset-3">
+							<div class="b-infoBar__btns">
+								<a href="#" class="btn m-btn m-infoBtn">Reset<span class="fa fa-angle-right"></span></a>
+							</div>
+						</div>
+						<div  class="col-sm-3 col-xs-12">
+							<div class="b-infoBar__btns">
+								<a href="#" class="btn m-btn m-infoBtn">Register<span class="fa fa-angle-right"></span></a>
+							</div>     
+						</div>
+						<div class="col-sm-3 col-xs-12">
+							<div class="b-infoBar__btns">
+								<a href="#" class="btn m-btn m-infoBtn">Save<span class="fa fa-angle-right"></span></a>
+							</div>      
+						</div>
+					</div> -->
+				</form>
+			</div>
+		</section><!--b-compare-->
+
+		<div class="b-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-xs-6">
+						<aside class="b-info__aside wow zoomInLeft" data-wow-delay="0.3s">
+							<article class="b-info__aside-article">
+                            	<h3><span class="fa fa-instagram"></span><a href="#"> @jualanmotorcom</a></h3>
+                            	<!-- www.intagme.com -->
+<iframe src="http://www.intagme.com/in/?u=cGFtZWxhYW5kZXJzb258aW58MTAwfDR8NHwyMjIyMjJ8bm98MXx1bmRlZmluZWR8bm8=" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:350px" ></iframe>								
+							</article>							
+						</aside>
+					</div>
+					<div class="col-md-4 col-xs-6">
+						<div class="b-info__latest wow zoomInUp" data-wow-delay="0.3s">
+							<h3>KNALPOT</h3>
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
+								<div class="b-info__latest-article-photo m-audi"></div>
+								<div class="b-info__latest-article-info">
+									<h6><a href="detail.html">MERCEDES-AMG GT S</a></h6>
+									<p style="margin:0px;">12 - 01 - 2016</p>
+                                    <p style="color:#ffffff;margin:0px;line-height:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida convallis lorem ac tincidunt. Nulla laoreet diam quis.</p>
+								</div>
+							</div>
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
+								<div class="b-info__latest-article-photo m-audiSpyder"></div>
+								<div class="b-info__latest-article-info">
+									<h6><a href="#">AUDI R8 SPYDER V-8</a></h6>
+									<p style="margin:0px;">12 - 01 - 2016</p>
+                                    <p style="color:#ffffff;margin:0px;line-height:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida convallis lorem ac tincidunt. Nulla laoreet diam quis.</p>
+								</div>
+							</div>
+							<div class="b-info__latest-article wow zoomInUp" data-wow-delay="0.3s">
+								<div class="b-info__latest-article-photo m-aston"></div>
+								<div class="b-info__latest-article-info">
+									<h6><a href="#">ASTON MARTIN VANTAGE</a></h6>
+									<p style="margin:0px;">12 - 01 - 2016</p>
+                                    <p style="color:#ffffff;margin:0px;line-height:12px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida convallis lorem ac tincidunt. Nulla laoreet diam quis.</p>
+								</div>
+							</div>
+						</div>
+					</div>					
+					<div class="col-md-4 col-xs-6">
+						<address class="b-info__contacts wow zoomInUp" data-wow-delay="0.3s">
+							<p>Hubungi Kami</p>
+							<div class="b-info__contacts-item">
+								<span class="fa fa-map-marker"></span>
+								<em>Jln Pejaten raya no. 33D. Pasar Minggu. Jakarta Selatan</em>
+							</div>
+							<div class="b-info__contacts-item">
+								<span class="fa fa-phone"></span>
+								<em>Phone:  +6221 - 78838123</em>
+							</div>
+							<div class="b-info__contacts-item">
+								<span class="fa fa-envelope"></span>
+								<em>Email:  info@jualanmotor.com</em>
+							</div>
+						</address>
+					</div>
+				</div>
+			</div>
+		</div><!--b-info-->
+
+		<footer class="b-footer">
+			<a id="to-top" href="#this-is-top"><i class="fa fa-chevron-up"></i></a>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4">
+						<div class="b-footer__company wow fadeInLeft" data-wow-delay="0.3s">
+							<div class="b-nav__logo" style="height:70px !important;"></div>
+							<p>&copy; 2016 jualanmotor.com</p>
+						</div>
+					</div>
+					<div class="col-xs-8">
+						<div class="b-footer__content wow fadeInRight" data-wow-delay="0.3s">
+							<div class="b-footer__content-social">
+								<a href="#"><span class="fa fa-facebook-square"></span></a>
+								<a href="#"><span class="fa fa-twitter-square"></span></a>
+								<a href="#"><span class="fa fa-instagram"></span></a>
+								<a href="#"><span class="fa fa-youtube-square"></span></a>
+							</div>
+							<nav class="b-footer__content-nav">
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">Iklan Terbaru</a></li>
+									<li><a href="#">Motor Bekas</a></li>
+									<li><a href="#">Motor Baru</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">News</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!--b-footer-->
+
+		<!--Datepicker-->
+		<script>
+			$(document).ready(function(){
+			    $('#tryDate input').datepicker({});
+			});
+		</script>
+		<!--End Datepicker-->
+		<!--Main-->   
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+
+		<script src="assets/rendro-easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/jquery.easypiechart.min.js"></script>
+		<script src="js/classie.js"></script>
+
+		<!--Switcher-->
+		<script src="assets/switcher/js/switcher.js"></script>
+		<!--Owl Carousel-->
+		<script src="assets/owl-carousel/owl.carousel.min.js"></script>
+		<!--bxSlider-->
+		<script src="assets/bxslider/jquery.bxslider.js"></script>
+		<!-- jQuery UI Slider -->
+		<script src="assets/slider/jquery.ui-slider.js"></script>
+
+		<!--Theme-->
+		<script src="js/jquery.smooth-scroll.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/jquery.placeholder.min.js"></script>
+		<script src="js/theme.js"></script>
+		<script>
+		$("#close1_open2").click(function() {
+			$("#modal1").modal('hide');
+			$("#modal2").modal('show');
+		});
+		</script>
+	</body>
+</html>
